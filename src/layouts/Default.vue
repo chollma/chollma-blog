@@ -1,6 +1,7 @@
 <template>
   <div class="layout">
-    <header class="header">
+    <!-- TODO - Turn Header into Component -->
+    <header class="header"> 
       <strong>
         Cooper Hollmaier
       </strong>
@@ -11,6 +12,18 @@
       </nav>
     </header>
     <slot/>
+        <!-- TODO - Turn Footer into Component -->
+     <header class="header">
+      <nav class="nav">
+        <g-link class="nav__link" to="https://github.com/chollma">Github</g-link>
+        <g-link class="nav__link" to="https://twitter.com/CooperHollmaier">Twitter</g-link>
+        <g-link class="nav__link" to="https://www.instagram.com/cooperhollmaier">Instagram</g-link>
+        <g-link class="nav__link" to="https://www.youtube.com/channel/UCWyuE3usgzzuPIdmR_6iRWA">YouTube</g-link>
+      </nav>
+    </header>
+    <div>
+        <p>Cooper Hollmaier © 2020, All rights reserved.</p>
+      </div>
   </div>
 </template>
 
