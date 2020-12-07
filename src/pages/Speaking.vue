@@ -1,7 +1,8 @@
 <template>
   <Layout>
-    <h1>Speaking</h1>
-     <section class="section">
+<header class="header">
+      <h1>Speaking</h1>
+    </header>     <section class="section">
             <p>I love sharing the lessons I've learned, the knowledge I've gained, and mentoring others looking to start a career in search engine optimization, digital marketing, communications, or a related field.</p>
             <p>If you are looking for a contributor, you can reach out on <a href="https://twitter.com/cooperhollmaier">Twitter</a> or <a href="mailto:cooperjhollmaier@gmail.com">email me</a>.</p>
         </section>

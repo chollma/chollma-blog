@@ -1,8 +1,7 @@
 <template>
   <Layout>
     <header class="header">
-      <h1 v-html="$page.metadata.siteName" />
-      <h2 v-html="$page.metadata.siteDescription" />
+      <h1>Articles</h1>
     </header>
     <section class="posts">
       <PostList

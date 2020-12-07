@@ -2,7 +2,7 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+        Cooper Hollmaier
       </strong>
       <nav class="nav">
         <g-link class="nav__link" to="/speaking">Speaking</g-link>
