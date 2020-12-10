@@ -45,7 +45,6 @@ body {
 }
 
 p {
-    grid-column: 2;
     margin-top: .5em;
     margin-bottom: .5em;
 }
@@ -57,7 +56,6 @@ a {
 ol,
 ul,
 li {
-    grid-column: 2;
     margin: .5em;
 }
 
@@ -74,7 +72,6 @@ h4,
 h5,
 h6 {
     font-weight: var(--fw-bold);
-    grid-column: 2;
     line-height: 1;
     margin-top: 1em;
     margin-bottom: 1em;

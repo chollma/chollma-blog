@@ -1,43 +1,69 @@
 <template>
   <Layout>
-    <header class="header">
-    <h1> Cooper Hollmaier </h1>
-    </header>
-    <section>
-      <p>Hi, I'm <strong>Cooper Hollmaier</strong>. I'm a life-long learner with a passion for developing digital products that are fast, sustainable, and accessible for all.</p>
-    </section>
-    <section>
-      <h2>Current Projects</h2>
-      <ul>
-        <li>Supporting technical search engine optimization (SEO) at <a href="https://www.rei.com">Recreational Equipment, Inc.</a></li>
-        <li>Educating others on how search engines discover, organize, and serve results to users.</li>
-        <li>Discovering, tinkering, and expanding my software engineering skills</li>      </ul>
-    </section>
-    <section>
-      <h2>What I'm Reading</h2>
-      <ul>
-        <li>Good Economics for Hard Times by Abhijit Banerjee and Esther Duflo</li>
-        <li>The Headspace Guide to Meditation and Mindfulness by Andy Puddicombe</li>
-        <li>The World Without Us by Alan Weisman</li>
-        <li>We Wish to Inform You That Tomorrow We Will be Killed With Our Families: Stories from Rwanda by <a href="https://twitter.com/pgourevitch" aria-label="Got to Philip Gourevtich's Twitter profile page">Philip Gourevtich</a></li>
-      </ul>
-    </section>
+    <main class="home">
+      <section class="home__body">
+        <section class="home__intro">
+          <img class="home__hero__img" src="https://via.placeholder.com/150" />
+          <h1>Cooper Hollmaier</h1>
+          <p>
+            Hi, I'm <strong>Cooper Hollmaier</strong>. I'm a life-long learner
+            with a passion for developing digital products that are fast,
+            sustainable, and accessible for all.
+          </p>
+        </section>
+      </section>
+    </main>
   </Layout>
 </template>
 
 <script>
 export default {
-  components: {
-   
-  },
+  components: {},
   metaInfo: {
     title: "A simple blog",
   },
 };
 </script>
 
-
-
 <style>
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.home {
+  display: grid;
+  grid-template-columns:
+    minmax(1.2rem, 1fr)
+    minmax(auto, 70ch)
+    minmax(1.2rem, 1fr);
+}
 
+img {
+  justify-self: center;
+  max-width: 30%;
+  border-radius: 50%;
+  margin-top: 2em;
+  margin-bottom: -0.5em;
+  padding: 0.5em;
+}
+.home__body {
+  grid-column: 2;
+}
+
+.home__intro {
+  text-align: center;
+}
+.home__subhead {
+  font-weight: 900;
+  color: black;
+  font-family: "Vollkorn", serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.home__slot1 {
+}
+.home__slot2 {
+}
 </style>

@@ -1,24 +1,36 @@
 <template>
   <Layout>
-    <br />
-    <div class="post">
-      <div class="post__meta">
-        <h1 class="post__title">{{ $page.post.title }}</h1>
-        <p class="post-date">
-          By Cooper Hollmaier | {{ $page.post.date }} &#8226;
-          {{ $page.post.timeToRead }} min read
-        </p>
+    <article class="article">
+      <div class="article__column">
+        <div class="article__top">
+          <div class="article__subhead">
+            subhead
+          </div>
+          <div class="article__head">
+            <h1 class="article--head--h1">{{ $page.post.title }}</h1>
+          </div> 
+          <div class="article__byline">
+            By
+            <span class="article--byline-bold">Cooper Hollmaier</span>
+          </div>
+          <span class="article__topchim">
+            |
+          </span>
+          <div class="article__dateline">
+            {{ $page.post.date }} &#8226; {{ $page.post.timeToRead }} min read
+          </div>
+          <div class="article__hero">
+          </div>
+          <div class="article__social"></div>
+        </div>
+        <div class="article__body">
+          <p v-html="$page.post.content" />
+        </div>
+        <div class="article__next">
+        </div>
+        <div class="article__comments"></div>
       </div>
-      <div class="post__content">
-        <img src="https://via.placeholder.com/350x160?text=Hero" />
-        
-        <p v-html="$page.post.content" />
-      </div>
-      <div class="post__related">
-        <h3>Read this next</h3>
-        <img src="https://via.placeholder.com/350x150?text=Related Articles" />
-      </div>
-    </div>
+    </article>
   </Layout>
 </template>
 
@@ -35,43 +47,63 @@ query Post ($path: String!) {
 </page-query>
 
 <style>
-.post {
+.article {
   display: grid;
   grid-template-columns:
     minmax(1.2rem, 1fr)
     minmax(auto, 70ch)
     minmax(1.2rem, 1fr);
-}
-.post__content {
-  grid-column: 2;
-  font-family: "Vollkorn", serif;
+  font-family: "Lato", san-serif;
   font-weight: 400;
+  font-size: 14px;
 }
-.post__meta {
+.article__column {
   grid-column: 2;
 }
 
-.post__title {
+.article__subhead {
+  font-weight: 600;
+  color:black;
+  border-bottom: 3px solid black;
+  display: inline-block;
+  text-transform:uppercase;
+  font-size: 14px;
+}
+.article__head {
   font-family: "Vollkorn", serif;
   font-weight: 900;
-  margin-bottom: .75rem;
+  margin-bottom: 0;
+}
+.article--head--h1{
+  font-weight: 900;
+  margin-top: .85rem;
+  margin-bottom: .85rem;
+}
+.article__byline {
+  color: gray;
+  display: inline-block;
+  padding-right: .25rem;
+}
+.article--byline-bold {
+  color: black;
+  font-weight: 600;
+  display: inline-block;
 }
 
-.post__related {
-  grid-column: 2;
+.article__dateline {
+  color: gray;
+  display: inline-block;
+  padding-left: .25rem;
 }
 
-.post-date{
-  font-size: var(--fs-tiny);
-  font-family: "Lato", serif;
-  font-weight: 500;
-
+.article__body {
+  font-family: "Vollkorn", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
-img {
-  grid-column: 1 / 4;
-  width: 100%;
-  max-width: 100ch;
-  justify-self: center;
+.article__hero{
+  padding-top: 18px;
 }
+
 </style>
