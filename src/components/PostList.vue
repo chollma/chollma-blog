@@ -22,10 +22,9 @@ export default {
 .archive__description{
   color:black;
   font-family: "Lato", sans-serif;
-  font-size:16px;
+  font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-
 }
 
 .archive__date {
@@ -38,6 +37,4 @@ export default {
 a {
   text-decoration: none;
 }
-
-
 </style>

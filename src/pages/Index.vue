@@ -4,10 +4,12 @@
       <div class="home__column">
         <div class="home__top">
           <div class="home__subhead">
-            <g-image src="~/assets/img/cooper.jpeg" />
+            <g-image
+              class="home__image"
+              src="~/assets/img/cooper.jpeg" />
           </div>
           <div class="home__head">
-            <h1 class="home--head--h1">Cooper Hollmaier</h1>
+            <h1 class="home__heading home__heading--primary">Cooper Hollmaier</h1>
           </div>
         </div>
         <div class="home__body">
@@ -64,7 +66,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .home {
   display: grid;
   grid-template-columns:
@@ -74,59 +76,61 @@ export default {
   font-family: "Lato", san-serif;
   font-weight: 400;
   font-size: 14px;
-}
-.home__column {
-  grid-column: 2;
-}
-.home__top {
-  text-align: center;
-}
 
-.home__subhead {
-  display: inline-block;
-}
-.home__head {
-  font-family: "Vollkorn", serif;
-  font-weight: 900;
-  margin-bottom: 0;
-  text-align: center;
-}
-.home--head--h1 {
-  font-weight: 900;
-  margin-top: 0.85rem;
-  margin-bottom: 0.85rem;
-}
-.home__byline {
-  color: gray;
-  display: inline-block;
-  padding-right: 0.25rem;
-  font-family: "Lato", san-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-.home--byline-bold {
-  color: black;
-  font-weight: 600;
-  display: inline-block;
-}
+  &__column {
+    grid-column: 2;
+  }
 
-.home__body {
-  font-family: "Vollkorn", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
+  &__top {
+    text-align: center;
+  }
 
-.home__hero {
-  padding-top: 18px;
-}
+  &__subhead {
+    display: inline-block;
+  }
 
-img {
-  grid-column: 2;
-  max-width: 50%;
-  justify-self: center;
-  border-radius: 50%;
-  margin-top: 2em;
-  margin-bottom: -0.5em;
-  padding: 0.5em;
+  &__image {
+    grid-column: 2;
+    max-width: 50%;
+    justify-self: center;
+    border-radius: 50%;
+    margin-top: 2em;
+    margin-bottom: -0.5em;
+    padding: 0.5em;
+  }
+
+  &__head {
+    font-family: "Vollkorn", serif;
+    font-weight: 900;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__heading {
+    &--primary {
+      font-weight: 900;
+      margin-top: 0.85rem;
+      margin-bottom: 0.85rem;
+    }
+  }
+
+  &__byline {
+    color: gray;
+    display: inline-block;
+    padding-right: 0.25rem;
+    font-family: "Lato", san-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &__body {
+    font-family: "Vollkorn", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__hero {
+    padding-top: 18px;
+  }
 }
 </style>

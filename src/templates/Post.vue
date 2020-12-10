@@ -6,18 +6,16 @@
           <div class="article__subhead">
             subhead
           </div>
-          <div class="article__head">
-            <h1 class="article--head--h1">{{ $page.post.title }}</h1>
-          </div> 
+          <h1 class="article__heading article__heading--primary">{{ $page.post.title }}</h1>
           <div class="article__byline">
             By
             <span class="article--byline-bold">Cooper Hollmaier</span>
-          </div>
-          <span class="article__topchim">
-            |
-          </span>
-          <div class="article__dateline">
-            {{ $page.post.date }} &#8226; {{ $page.post.timeToRead }} min read
+            <span class="article__topchim">
+              |
+            </span>
+            <span class="article__dateline">
+              {{ $page.post.date }} &#8226; {{ $page.post.timeToRead }} min read
+            </span>
           </div>
           <div class="article__hero">
           </div>
@@ -46,7 +44,7 @@ query Post ($path: String!) {
 }
 </page-query>
 
-<style>
+<style lang="scss">
 .article {
   display: grid;
   grid-template-columns:
@@ -56,28 +54,33 @@ query Post ($path: String!) {
   font-family: "Lato", san-serif;
   font-weight: 400;
   font-size: 14px;
-}
-.article__column {
-  grid-column: 2;
+
+  &__column {
+    grid-column: 2;
+  }
+
+  &__subhead {
+    font-weight: 600;
+    color:black;
+    border-bottom: 3px solid black;
+    display: inline-block;
+    text-transform:uppercase;
+    font-size: 14px;
+  }
 }
 
-.article__subhead {
-  font-weight: 600;
-  color:black;
-  border-bottom: 3px solid black;
-  display: inline-block;
-  text-transform:uppercase;
-  font-size: 14px;
-}
+// TODO: Move the rest of these into the article style block.
 .article__head {
   font-family: "Vollkorn", serif;
   font-weight: 900;
   margin-bottom: 0;
 }
-.article--head--h1{
-  font-weight: 900;
-  margin-top: .85rem;
-  margin-bottom: .85rem;
+.article__heading {
+  &--primary {
+    font-weight: 900;
+    margin-top: .85rem;
+    margin-bottom: .85rem;
+  }
 }
 .article__byline {
   color: gray;
@@ -105,5 +108,4 @@ query Post ($path: String!) {
 .article__hero{
   padding-top: 18px;
 }
-
 </style>
