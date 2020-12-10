@@ -14,6 +14,7 @@ export default {
 
 <style>
 .archive__title{
+  font-size: 24px;
   font-weight: 900;
   font-family: Vollkorn, serif;
   color:black;
@@ -21,7 +22,7 @@ export default {
 .archive__description{
   color:black;
   font-family: "Lato", sans-serif;
-  font-size:14px;
+  font-size:16px;
   line-height: 18px;
   font-weight: 400;
 
