@@ -50,25 +50,25 @@ query {
 }
 </page-query>
 
-<style>
+<style lang="scss">
 .archive{
   display: grid;
   grid-template-columns:
     minmax(1.2rem, 1fr)
     minmax(auto, 70ch)
     minmax(1.2rem, 1fr);
-    padding-bottom: 3rem;
-}
+  padding-bottom: 3rem;
 
-.archive__header {
-  grid-column: 2;
-  font-weight: 600;
-  color:black;
-  display: inline-block;
-  font-size: 14px;
-}
+  &__header {
+    grid-column: 2;
+    font-weight: 600;
+    color:black;
+    display: inline-block;
+    font-size: 14px;
+  }
 
-.archive__list {
-  grid-column: 2;
+  &__list {
+    grid-column: 2;
+  }
 }
 </style>
