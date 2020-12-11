@@ -4,12 +4,12 @@
       <div class="home__column">
         <div class="home__top">
           <div class="home__subhead">
-            <g-image
-              class="home__image"
-              src="~/assets/img/cooper.jpeg" />
+            <g-image class="home__image" src="~/assets/img/cooper.jpeg" />
           </div>
           <div class="home__head">
-            <h1 class="home__heading home__heading--primary">Cooper Hollmaier</h1>
+            <h1 class="home__heading home__heading--primary">
+              Cooper Hollmaier
+            </h1>
           </div>
         </div>
         <div class="home__body">
