@@ -1,8 +1,8 @@
 <template>
   <div class="layout">
-    <site-header/>
-    <slot/>
-    <site-footer/>
+    <site-header />
+    <slot />
+    <site-footer />
   </div>
 </template>
 
@@ -14,6 +14,4 @@ query {
 }
 </static-query>
 
-<style>
-
-</style>
+<style></style>

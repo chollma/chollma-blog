@@ -13,6 +13,8 @@ module.exports = {
       path: 'content/posts/**/*.md',
       typeName: 'Post',
       route: '/article/:title'
-    }
+    },
+   
+
   }]
 }

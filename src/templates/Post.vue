@@ -6,7 +6,9 @@
           <div class="article__subhead">
             subhead
           </div>
-          <h1 class="article__heading article__heading--primary">{{ $page.post.title }}</h1>
+          <h1 class="article__heading article__heading--primary">
+            {{ $page.post.title }}
+          </h1>
           <div class="article__byline">
             By
             <span class="article--byline-bold">Cooper Hollmaier</span>
@@ -17,15 +19,13 @@
               {{ $page.post.date }} &#8226; {{ $page.post.timeToRead }} min read
             </span>
           </div>
-          <div class="article__hero">
-          </div>
+          <div class="article__hero"></div>
           <div class="article__social"></div>
         </div>
         <div class="article__body">
           <p v-html="$page.post.content" />
         </div>
-        <div class="article__next">
-        </div>
+        <div class="article__next"></div>
         <div class="article__comments"></div>
       </div>
     </article>
@@ -61,51 +61,53 @@ query Post ($path: String!) {
 
   &__subhead {
     font-weight: 600;
-    color:black;
+    color: black;
     border-bottom: 3px solid black;
     display: inline-block;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-size: 14px;
   }
-}
 
-// TODO: Move the rest of these into the article style block.
-.article__head {
-  font-family: "Vollkorn", serif;
-  font-weight: 900;
-  margin-bottom: 0;
-}
-.article__heading {
-  &--primary {
+  &__head {
+    font-family: "Vollkorn", serif;
     font-weight: 900;
-    margin-top: .85rem;
-    margin-bottom: .85rem;
+    margin-bottom: 0;
   }
-}
-.article__byline {
-  color: gray;
-  display: inline-block;
-  padding-right: .25rem;
-}
-.article--byline-bold {
-  color: black;
-  font-weight: 600;
-  display: inline-block;
-}
 
-.article__dateline {
-  color: gray;
-  display: inline-block;
-  padding-left: .25rem;
-}
+  &__byline {
+    color: gray;
+    display: inline-block;
+    padding-right: 0.25rem;
+  }
+  &--byline-bold {
+    color: black;
+    font-weight: 600;
+    display: inline-block;
+  }
 
-.article__body {
-  font-family: "Vollkorn", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-}
+  &__dateline {
+    color: gray;
+    display: inline-block;
+    padding-left: 0.25rem;
+  }
 
-.article__hero{
-  padding-top: 18px;
+  &__body {
+    font-family: "Vollkorn", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  &__hero {
+    padding-top: 18px;
+  }
+
+  &__heading {
+    &--primary {
+      font-family: "Vollkorn", serif;
+      font-weight: 900;
+      margin-top: 0.85rem;
+      margin-bottom: 0.85rem;
+    }
+  }
 }
 </style>
