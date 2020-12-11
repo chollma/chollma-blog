@@ -51,7 +51,7 @@ query {
 </page-query>
 
 <style lang="scss">
-.archive {
+.archive{
   display: grid;
   grid-template-columns:
     minmax(1.2rem, 1fr)
@@ -62,13 +62,14 @@ query {
   &__header {
     grid-column: 2;
     font-weight: 600;
-    color: black;
+    color:black;
     display: inline-block;
     font-size: 14px;
   }
 
   &__list {
     grid-column: 2;
+    
   }
 }
 </style>

@@ -16,6 +16,7 @@ export default {
 
 <style lang="scss">
 .card {
+  
   &__title {
     font-size: 24px;
     font-weight: 900;

@@ -6,6 +6,10 @@
   </div>
 </template>
 
+<script>
+
+</script>
+
 <static-query>
 query {
   metadata {
