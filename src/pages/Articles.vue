@@ -69,6 +69,7 @@ query {
 
   &__list {
     grid-column: 2;
+    
   }
 }
 </style>

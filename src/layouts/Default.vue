@@ -1,10 +1,14 @@
 <template>
   <div class="layout">
-    <site-header/>
-    <slot/>
-    <site-footer/>
+    <site-header />
+    <slot />
+    <site-footer />
   </div>
 </template>
+
+<script>
+
+</script>
 
 <static-query>
 query {
@@ -14,6 +18,4 @@ query {
 }
 </static-query>
 
-<style>
-
-</style>
+<style></style>

@@ -10,6 +10,7 @@ module.exports = {
   permalinks: {
     trailingSlash: false
   },
+  siteURL: 'https://cooperhollmaier.com',
   plugins: [
     {
     use: '@gridsome/source-filesystem',
@@ -17,6 +18,8 @@ module.exports = {
       path: 'content/posts/**/*.md',
       typeName: 'Post',
       route: '/article/:title'
-    }
+    },
+   
+
   }]
 }
