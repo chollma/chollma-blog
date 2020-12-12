@@ -6,6 +6,10 @@
 
 module.exports = {
   siteName: 'Cooper Hollmaier',
+  titleTemplate: '%s | Cooper Hollmaier',
+  permalinks: {
+    trailingSlash: false
+  },
   siteURL: 'https://cooperhollmaier.com',
   plugins: [
     {

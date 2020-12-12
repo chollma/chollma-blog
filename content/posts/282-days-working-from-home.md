@@ -4,27 +4,49 @@ description: "Insert a Description"
 date: 2020-12-09
 ---
 
-*In 12 feet, you will arrive at your destination.* **12 feet**. That's my morning commute now. That's how far I have to walk from my bed
-to my desk in the other room of our 650 square feet. You think that would excite me. You'd think I'd feel liberated — able to finally escape
-the slow shuffle of the cars in front of me. But I feel more meloncholy about the whole thing. It feels like something is missing.
+In 12 feet, you will arrive at your destination.
 
-282 days. 77 percent of the year. That's how long I've been working from home. 
+12 whole feet. 
 
-Before the pandemic (COVID-19) hit, I'd spend the first four days of my week commuting to an office. The last day of the week came as a bit of
-a happy surprise. The one day I could unplug from meetings and communication and get some deep thinking done. Now the days all seem to blend together.
+That is my morning commute now. The distance I have to walk from my bed to the day's work. An effortless skip across the dark wooden floors of our 650 square foot slice of paradise.
 
-I think it's Wednesday. Or is it Thursday?
+You'd think that distance would excite me. That I'd feel liberated — finally able to escape the slow moving assembly line of cars on the 405.  
 
-This year has been just as hazy as the hues of the Seattle skies. Not sure if it wants to be day time or night time. Just settling for an uncertain shade of gray.
-That said, I've found a number of ways of coping with the forced reality that I hope will help you too. Here's my daily routine:
+I don't. There's a sense of longing that ties itself in a knot deep in the pit of my stomach. I miss the rush of the morning. The rumbling of the engine as I accelerated on the highway. Headed somewhere to do something great. The sigh of relief as the clock struck 4:30. The walk to the car, rain or shine, or the condition we can call "Seattle", where you're not really sure what it is outside.
+
+282 days. That's how long I've been working from home.
+
+Before the pandemic (COVID-19) hit, I'd spend the first four days of my week commuting to an office. The last day of the week came as a bit of a happy surprise. The one day I could unplug from meetings and communication and get some deep thinking done. Now all the days seems to be another recurring episode of "Will it Blend?"
+
+Today is Wednesday. Or is it Thursday?
+
+Though this year has brought us all a perpetual shade of uncertain gray, I've found solace in a daily routine. 
+
+I hope that laying out what I'm doing to cope with reality right now will help you too.
+
 
 ## Meditation
 
-Admittedly, I've had a hard time getting behind this practice. I also have a hard time finding that one-on-one therapy is for me. What I do know is that my
-biggest blocker is not having a clear mind. It's as if I'm stuck in a traffic jam and more cars keep appearing around me and I dream up new features, body styles, and paint jobs. As a result my brain wakes up and starts to rev its engine from 0-60. This is neither productive nor comfortable. Prior to adopting a few minutes of meditation at the start of everyday, I felt tired, stressed, and lacked clarity of purpose before the day ever began. 
+I start everyday with some silence. If you're a part of my daily life you know that slowing down and staying quiet is particularly hard for me. I'm a verbal processor and speaking my thoughts helps me comprehend. 
 
-So now, I wake up, shower, get a cup of coffee and resist the urge to look at my phone or crack open my email. I sit down at my desk and turn on Insight Timer. I set the timer for 3-5 minutes and just exist. I focus on my breathing and the idea of a clear mind. The metaphor that I like came to me from (insert title of headspace book). I take myself from standing in the middle of traffic to sititng on side of the road watching the cars go by. I'm self aware.
+It wasn't until I didn't have a commute that I realized I needed space to clear my head. It was easy when I worked every day in an office to get outside for a walk or run around the block. With a pandemic raging all around us, it was much more challenging. 
 
+Being cooped up for several months has given me an opportunity to be more self aware. When I wake up, my brain immediately goes into overdrive. I'm thinking about all the things I have to do today, trying to keep up with the latest headlines and getting ready. 
+
+This isn't healthy. 
+
+So, I adopted a simple routine:
+Breakfast
+Coffee
+Silence
+With a few minutes of meditation to start the day,  I'm less tired, stressed, and have a clear mind.
+
+I can admit that I was  a little skeptical of meditation, but I can admit taking the time to be more self aware works. You'll find that your actions are more intentional and you feel less rushed.
+
+Some great resources for mediation
+
+Get Some Headspace : 10 Minutes Can Make All the Difference
+Insight Timer
 ## Get Shit Done
 
 One I've taken the time to clear my mind, I focus on the most important things I need to get done today. I resist the urge to check Slack or my email. I focus on that thing for the next hour or so. I found that when I left this stuff to the end of the day (because that's when I have less meetings in general), my mind was tired and I got almost instantly frustrated when I got stuck doing a task. Since I've shifting my important work to the front half of the day, I feel less frustrated and more productive.
@@ -43,14 +65,17 @@ After what tends to be a meeting and work (get shit done) heavy morning, I need 
 
 It's hard, but after lunch I put down the passion project that I'm working on, but not without marking down a few to-dos for later if I feel up to it. This helps me remember what I was thinking and gives me some concrete goals for next time. After "powering down", I pick up where I left with work. Since I spent the few hours before lunch focusing on communication, it's likely that I'll have a few action items to take care of.
 
+Once I've taken care of a few things. I dedicate the last part of the day to planning. I reflect on what I got done today, what I need to focus more on, and what I'll do tomorrow. This brings me a sense of peace and puts my mind at ease as I rock into a final resting point at the ned of the day.
+
 ## Turning Off
+
+After I've planned my next day, I make a clear break from work. I don't work away the night or weekends any more. This was definitely the biggest change for me when I moved from a marketing agency to an in-house role. Having a clear work life balance is something that you should strive for. I feel happier, more clear headed, and considerably less stressed. I make sure that my team is clear on my expectations. I'll start work at 8am and be done at 4:30pm every day. Please refrain from contacting me before or after my working hours unless it's urgent.
+
+It helps that I work with a team who subscribes to these rules too. Setting clear boundries for me has been an important part to not embracing the workoholic in me. Everyone wins when you focus your productive energy into those working hours and relaxing during the other time. This helps to curb any burnout you might feel.
 
 ## Exercise
 
-## Personal Development
+Don't underestimate the nurturing your body needs. I've found that when I don't excercise (even if it's just a walk around the block with the pups), I feel stuffed into a corner. I feel agitated, stressed out, and unhappy. Cliche as it may be, the "runner's high" is a real thing that I embrace as much as I can. 
 
-## Dinner
-
-## Bed
-
+## Conclusion
 
