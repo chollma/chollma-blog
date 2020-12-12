@@ -5,7 +5,11 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Cooper Hollmaier',
+  titleTemplate: '%s | Cooper Hollmaier',
+  permalinks: {
+    trailingSlash: false
+  },
   plugins: [
     {
     use: '@gridsome/source-filesystem',
