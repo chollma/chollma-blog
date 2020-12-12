@@ -18,10 +18,10 @@ export default {
 .card {
   
   &__title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 900;
     font-family: Vollkorn, serif;
-    color: black;
+    color: var(--clr-dark);
   }
   &__description {
     color: black;
