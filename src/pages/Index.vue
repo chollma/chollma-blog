@@ -15,28 +15,30 @@
         <div class="home__body">
           <div class="home__byline">
             <p>
-              Hi, I'm Cooper Hollmaier. I'm a life-long learner with a passion
-              for developing digital products that are fast, sustainable, and
-              accessible for all.
+              Hi, I'm <span class="home__byline--bold">Cooper Hollmaier</span>.
+              I have a passion for developing digital products that are fast,
+              sustainable, and accessible for all.
             </p>
           </div>
-          <h2>Current projects</h2>
+          <h2 class="home__heading home__heading--secondary">
+            Current projects
+          </h2>
           <p>
-            I'm currently supporting technical search engine optimization (SEO)
-            at
+            I support technical search engine optimization (SEO) at
             <g-link to="https://www.rei.com"
               >Recreational Equipment, Inc.</g-link
             >
           </p>
           <p>
-            When I'm not at work, you'll find me writing articles, giving talks,
-            tinkering with code, and getting outside.
+            Outside of work, you'll find me writing
+            <g-link to="/articles">articles</g-link>, giving
+            <g-link to="/speaking">talks</g-link>, tinkering with
+            <g-link to="/projects">code</g-link>, and getting outside.
           </p>
-          <h2>Articles</h2>
+          <h2 class="home__heading home__heading--secondary">Articles</h2>
           <p>
-            You can find my articles on remote work, accessibility, SEO, and
-            software engineering in the <g-link to="/articles">Articles</g-link>
-            section.
+            I often write down my thoughts about remote work, accessibility, SEO, and
+            software engineering.
           </p>
           <p>
             My most recent article was:
@@ -44,7 +46,7 @@
               >Moving Towards Accessible-First</g-link
             >
           </p>
-          <h2>Talks</h2>
+          <h2 class="home__heading home__heading--secondary">Talks</h2>
           <p>
             I've spoken at a number of events in the past about technical SEO,
             content marketing, and digital marketing. You can find my latest
@@ -63,13 +65,12 @@ export default {
   metaInfo: {
     title: "Cooper Hollmaier",
     meta: [
-      { name: 'description', content: 'Digital marketing consultant, speaker, educator, and advocate for inclusivity. I help design SEO-friendly products and features that are accessible for all.'},
-      { name: 'author', content: 'Cooper Hollmaier'},
-      { name: 'twitter:creator', content: '@cooperhollmaier'},
-      { name: 'twitter:site', content: '@cooperhollmaier'},
-      { name: 'twitter:card', content: 'summary'},
-      
-    ]
+      {
+        name: "description",
+        content:
+          "Digital marketing consultant, speaker, educator, and advocate for inclusivity. I help design SEO-friendly products and features that are accessible for all.",
+      },
+    ],
   },
 };
 </script>
@@ -120,21 +121,35 @@ export default {
       margin-top: 0.85rem;
       margin-bottom: 0.85rem;
     }
+    &--secondary {
+      font-size: 20px;
+      font-weight: 600;
+      font-family: "Vollkorn";
+      display: inline-block;
+    }
   }
 
   &__byline {
     color: gray;
     display: inline-block;
-    padding-right: 0.25rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-family: "Lato", san-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 20px;
+
+    &--bold {
+      color: black;
+      font-weight: 600;
+    }
   }
 
   &__body {
     font-family: "Vollkorn", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    padding-bottom: 5rem;
   }
 
   &__hero {

@@ -13,7 +13,7 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Vollkorn:wght@400;500;700;800&display=swap'
   })
- 
+  Vue.component('Layout', DefaultLayout)
   Vue.component('SiteHeader', SiteHeader)
   Vue.component('SiteFooter', SiteFooter)
 
