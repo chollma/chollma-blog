@@ -57,6 +57,8 @@ query Post ($path: String!) {
 
   &__column {
     grid-column: 2;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   &__subhead {

@@ -35,6 +35,7 @@
     </div>
     <div class="footer__cta">
       <g-link to="/" class="button">Sign-Up</g-link>
+      
     </div>  
     <div class="footer__copyright">
         &copy; 2020 Cooper Hollmaier. All Rights Reserved.
@@ -50,29 +51,8 @@ export default {};
 </script>
 
 <style lang="scss">
+@import "~/assets/scss/mixins";
 
-// Breakpoints
-@media (min-width: 64em){
-  // styles go here
-}
-
-// 640px, 1024px, 1400px
-$breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
-
-// 639px, 1023px, 1399px
-$breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.4375em");
-
-@mixin breakpoint-up($size){
-  @media (min-width: map-get($breakpoints-up, $size)){
-    @content;
-  }
-}
-
-@mixin breakpoint-down($size){
-  @media (max-width: map-get($breakpoints-down, $size)){
-    @content;
-  }
-}
 .footer {
   font-family: "Lato", sans-serif;
   background-color:#303030;
@@ -174,14 +154,12 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 
     a {
       line-height: 2.25;
-      transition: color 150ms ease-in-out;  
+      transition: color 300ms ease-in-out;  
       &:hover {
-          color: lime;
+          color:#405E58;
       }  
     }
 
-
-    
   }
   &__cta{
 
