@@ -4,12 +4,12 @@
       <div class="home__column">
         <div class="home__top">
           <div class="home__subhead">
-            <g-image
-              class="home__image"
-              src="~/assets/img/cooper.jpeg" />
+            <g-image class="home__image" src="~/assets/img/cooper.jpeg" />
           </div>
           <div class="home__head">
-            <h1 class="home__heading home__heading--primary">Cooper Hollmaier</h1>
+            <h1 class="home__heading home__heading--primary">
+              Cooper Hollmaier
+            </h1>
           </div>
         </div>
         <div class="home__body">
@@ -40,7 +40,7 @@
           </p>
           <p>
             My most recent article was:
-            <g-link to="/article/moving-towards-accessible-first/"
+            <g-link to="/article/moving-towards-accessible-first"
               >Moving Towards Accessible-First</g-link
             >
           </p>
@@ -62,6 +62,14 @@ export default {
   components: {},
   metaInfo: {
     title: "Cooper Hollmaier",
+    meta: [
+      { name: 'description', content: 'Digital marketing consultant, speaker, educator, and advocate for inclusivity. I help design SEO-friendly products and features that are accessible for all.'},
+      { name: 'author', content: 'Cooper Hollmaier'},
+      { name: 'twitter:creator', content: '@cooperhollmaier'},
+      { name: 'twitter:site', content: '@cooperhollmaier'},
+      { name: 'twitter:card', content: 'summary'},
+      
+    ]
   },
 };
 </script>
