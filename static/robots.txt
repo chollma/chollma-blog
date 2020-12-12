@@ -1,4 +1,1 @@
 #Robots.txt for cooperhollmaier.netlify.app
-
-User-agent: *
-Disallow: /
