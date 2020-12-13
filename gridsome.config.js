@@ -9,10 +9,12 @@
 module.exports = {
   siteName: 'Cooper Hollmaier',
   titleTemplate: '%s | Cooper Hollmaier',
-  permalinks: {
-    trailingSlash: false
-  },
   siteURL: 'https://cooperhollmaier.com',
+  permalinks: 
+    {
+      trailingSlash:false
+    }
+  ,
   plugins: [
     {
     use: '@gridsome/source-filesystem',
@@ -21,6 +23,7 @@ module.exports = {
       typeName: 'Post',
       route: '/article/:title'
     },
+    
    
 
   }]

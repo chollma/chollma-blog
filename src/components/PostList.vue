@@ -1,6 +1,6 @@
 <template>
   <article class="card">
-    <g-link :to="post.path" class="card__link"
+    <g-link :to="post.path" class="card__link" 
       ><h2 class="card__title" v-html="post.title"
     /></g-link>
     <p class="card__description" v-html="post.description" />
