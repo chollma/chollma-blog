@@ -38,7 +38,7 @@ query Post ($path: String!) {
     id
     title
     content
-    date (format: "D MMMM YYYY")
+    date (format: "MMMM DD, YYYY")
     timeToRead
   }
 }
