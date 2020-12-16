@@ -1,19 +1,6 @@
 <template>
   <footer class="footer">
       <div class="container">
-
-     <div class="footer__cta">
-      <g-link to="/" class="button"></g-link>
-    </div>  
-    <div class="footer__links col1">
-      <g-link to="/">Home</g-link>
-      <g-link to="/talks/">Talks</g-link>
-      <g-link to="/code/">Code</g-link>
-      <g-link to="/articles/">Blog</g-link>
-    </div>
-    
-   
-
     <div class="footer__social">
       <g-link to="https://twitter.com/CooperHollmaier">
         <g-image src="~/assets/img/twitter.svg" alt="Twitter" />
@@ -32,7 +19,8 @@
       </g-link>
     </div>
     <div class="footer__copyright">
-        &copy; 2020 Cooper Hollmaier. All Rights Reserved.
+        <div>2020 Cooper Hollmaier. All Rights Reserved.</div>
+        <div>  <g-link to="/privacy/">Privacy</g-link> |  <g-link to="/accessibility">Accessibility</g-link></div>
     </div>
     </div>
       </div>
@@ -57,13 +45,8 @@ export default {};
   
 
   .container {@include breakpoint-up(large){
-      display:grid;
-      grid-template-columns: 2fr 1fr 1fr 3fr;
-      grid-template-rows: 1fr auto;
-      grid-template-areas: 
-        "logo links1 links2 cta"
-        "social links1 links2 copyright";
-      justify-items: start;
+      
+      justify-content: center;
       gap: 1rem;
   }}
 
@@ -82,7 +65,8 @@ export default {};
      }
 
      @include breakpoint-up(large){
-        grid-area: social;
+        grid-area: cta;
+        justify-self: right;
         align-self: end;
     }
     
@@ -167,6 +151,7 @@ export default {};
   &__copyright{
       font-size: .8125rem;
       color: gray;
+      display:inline-block;
     @include breakpoint-up(large){
          grid-area: copyright;
          align-self: end;

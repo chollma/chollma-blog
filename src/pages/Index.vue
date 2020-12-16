@@ -29,16 +29,16 @@
               >Recreational Equipment, Inc.</g-link
             >
             When I'm not working, you'll find me writing
-            <g-link to="/articles">articles</g-link>, giving
-            <g-link to="/speaking">talks</g-link>, tinkering with
-            <g-link to="/projects">code</g-link>, and getting outside.
+            <g-link to="/articles/">articles</g-link>, giving
+            <g-link to="/talks/">talks</g-link>, tinkering with
+            <g-link to="/code/">code</g-link>, and getting outside.
           </p>
           <p></p>
           <h2 class="home__heading home__heading--secondary">Articles</h2>
           <p>
             I often write down my thoughts about remote work, accessibility,
             SEO, and software engineering. My most recent article was:
-            <g-link to="/article/moving-towards-accessible-first"
+            <g-link to="/article/moving-towards-accessible-first/"
               >Moving Towards Accessible-First</g-link
             >
           </p>
