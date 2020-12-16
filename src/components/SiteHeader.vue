@@ -1,28 +1,12 @@
 <template>
   <header class="header">
-    <nav class="flex flex-jc-sb flex-ai-c">
-      <g-link class="header__logo" to="/">
-        <g-image
-          src="https://via.placeholder.com/175x30"
-          alt="Cooper Hollmaier"
-        />
-      </g-link>
-
-      <g-link class="header__menu hide-for-desktop" to="/">
-        <span></span>
-        <span></span>
-        <span></span>
-      </g-link>
-
-
-      <div class="header__links hide-for-mobile">
-          <g-link class="header__menu" to="/">Home</g-link>
-          <g-link class="header__menu" to="/speaking">Speaking</g-link>
-          <g-link class="header__menu" to="/projects">Projects</g-link>
-          <g-link class="header__menu" to="/articles">Articles</g-link>
-          
+    <nav class="container">
+      <div class="header__links ">
+        <g-link class="header__menu" to="/">Home</g-link>
+        <g-link class="header__menu" to="/talks/">Talks</g-link>
+        <g-link class="header__menu" to="/code/">Code</g-link>
+        <g-link class="header__menu--highlight" to="/articles/">Blog</g-link>
       </div>
-      <button type="button" class="header__cta hide-for-mobile">Sign-Up</button>
     </nav>
   </header>
 </template>
@@ -31,69 +15,73 @@
 
 <style lang="scss">
 .header {
-    font-family: "Lato", sans-serif;
+  justify-content: center;
+  display: grid;
+  grid-template-columns:
+    minmax(1.2rem, 1fr)
+    minmax(auto, 70ch)
+    minmax(1.2rem, 1fr);
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 72px;
+  margin-bottom: 10px;
+  justify-self: center;
 
-    nav {
-      padding: 1.0625px 1.5rem;
-    }
-  &__logo {
-    img {
-        width: 8.8125rem;
-        height: 1.375rem;
-    }
+  nav {
+    font-weight: 500;
+    grid-column: 2;
+    justify-self: center;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
   }
 
   &__menu {
-    > span {
+    background: white;
+    position: relative;
+    width: calc(100% - 3rem);
+    transform: translate(-50%);
+    margin-top: 1.5rem;
+    &--highlight {
+      background: #405e58;
+      color: white;
+      padding: 0.3125rem;
+    }
+    a {
+      color: black;
+      padding: 0.625rem;
       display: block;
-      width: 26px;
-      height: 2px;
-      background-color: #405e58;
-
-      &:not(:last-child) {
-        margin-bottom: 5px;
+      text-align: center;
     }
-    
-    }
-
-     
   }
 
   &__links {
-
-      a {
-          font-size: 0.875rem;
-          color: black;
-          transition: color 200ms ease-in-out;
-          position:relative;
-          &:not(:last-child){
-            margin-right: 32px;
-          }
-          &:hover {
-            color:#585656;
-
-             &::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            display: block;
-            height: 3px;
-            background: #405E58;
-            left: 0;
-            right: 0;
-            bottom: -15px;
-          }
-          }
-         
-
+    grid-column: 2;
+    font-weight: 600;
+    a {
+      font-size: 0.875rem;
+      transition: color 200ms ease-in-out;
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 32px;
       }
+      &:hover {
+        color: #585656;
 
-      
-
-   
-
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          display: block;
+          height: 3px;
+          background: #405e58;
+          left: 0;
+          right: 0;
+          bottom: -15px;
+        }
+      }
+    }
   }
-
-     
 }
 </style>

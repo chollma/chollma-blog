@@ -1,9 +1,19 @@
 <template>
   <footer class="footer">
       <div class="container">
-<g-link class="footer__logo" to="/">
-      <g-image src="https://via.placeholder.com/185x25" />
-    </g-link>
+
+     <div class="footer__cta">
+      <g-link to="/" class="button"></g-link>
+    </div>  
+    <div class="footer__links col1">
+      <g-link to="/">Home</g-link>
+      <g-link to="/talks/">Talks</g-link>
+      <g-link to="/code/">Code</g-link>
+      <g-link to="/articles/">Blog</g-link>
+    </div>
+    
+   
+
     <div class="footer__social">
       <g-link to="https://twitter.com/CooperHollmaier">
         <g-image src="~/assets/img/twitter.svg" alt="Twitter" />
@@ -21,22 +31,6 @@
         <g-image src="~/assets/img/github.svg" alt="Github" />
       </g-link>
     </div>
-    <div class="footer__links col1">
-      <g-link to="/">Home</g-link>
-      <g-link to="/speaking">Speaking</g-link>
-      <g-link to="/projects">Projects</g-link>
-      <g-link to="/articles">Articles</g-link>
-    </div>
-    <div class="footer__links col2">
-      <g-link to="/contact">Contact</g-link>
-      <g-link to="/privacy">Privacy</g-link>
-      <g-link to="/accessibility">Accessibility</g-link>
-      <g-link to="/articles">Link</g-link>
-    </div>
-    <div class="footer__cta">
-      <g-link to="/" class="button">Sign-Up</g-link>
-      
-    </div>  
     <div class="footer__copyright">
         &copy; 2020 Cooper Hollmaier. All Rights Reserved.
     </div>
@@ -78,18 +72,8 @@ export default {};
       text-decoration: none;
   }
 
-  &__logo {
-    display: inline-block;
-
-    @include breakpoint-down(medium){
-         margin-bottom: 1.875rem;
-     }
-
-    @include breakpoint-up(large){
-        grid-area: logo;
-    }
-
-  }
+ 
+  
   &__social {
     
 

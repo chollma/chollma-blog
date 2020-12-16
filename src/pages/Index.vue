@@ -28,30 +28,31 @@
             <g-link to="https://www.rei.com"
               >Recreational Equipment, Inc.</g-link
             >
-          </p>
-          <p>
-            Outside of work, you'll find me writing
+            When I'm not working, you'll find me writing
             <g-link to="/articles">articles</g-link>, giving
             <g-link to="/speaking">talks</g-link>, tinkering with
             <g-link to="/projects">code</g-link>, and getting outside.
           </p>
+          <p></p>
           <h2 class="home__heading home__heading--secondary">Articles</h2>
           <p>
-            I often write down my thoughts about remote work, accessibility, SEO, and
-            software engineering.
-          </p>
-          <p>
-            My most recent article was:
+            I often write down my thoughts about remote work, accessibility,
+            SEO, and software engineering. My most recent article was:
             <g-link to="/article/moving-towards-accessible-first"
               >Moving Towards Accessible-First</g-link
             >
           </p>
+          <p></p>
           <h2 class="home__heading home__heading--secondary">Talks</h2>
           <p>
             I've spoken at a number of events in the past about technical SEO,
             content marketing, and digital marketing. You can find my latest
             decks on
             <g-link to="https://speakerdeck.com/chollma">SpeakerDeck</g-link>
+          </p>
+          <p>
+            To hire me for your event, check out my
+            <g-link to="/talks">speaker rider</g-link>.
           </p>
         </div>
       </div>
@@ -103,8 +104,7 @@ export default {
     max-width: 50%;
     justify-self: center;
     border-radius: 50%;
-    margin-top: 2em;
-    margin-bottom: -0.5em;
+    
     padding: 0.5em;
   }
 
@@ -117,27 +117,27 @@ export default {
 
   &__heading {
     &--primary {
+      display: none;
       font-weight: 900;
       margin-top: 0.85rem;
       margin-bottom: 0.85rem;
     }
     &--secondary {
-      font-size: 20px;
+      font-size: 1.5rem;
       font-weight: 600;
       font-family: "Vollkorn";
-      display: inline-block;
     }
   }
 
   &__byline {
-    color: gray;
+    color: rgb(90, 89, 89);
     display: inline-block;
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-family: "Lato", san-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.125rem;
 
     &--bold {
       color: black;
@@ -146,14 +146,10 @@ export default {
   }
 
   &__body {
-    font-family: "Vollkorn", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
     padding-bottom: 5rem;
-  }
-
-  &__hero {
-    padding-top: 18px;
   }
 }
 </style>
