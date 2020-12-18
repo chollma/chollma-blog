@@ -1,7 +1,7 @@
 <template>
   <header class="header">
-    <div class="header__top">
-      <ul class="header__social">
+    <div class="header__top flex flex-jc-sb flex-ai-c">
+      <ul class="header__social hide-for-mobile">
         <li>
           <g-link to="https://twitter.com/CooperHollmaier"
             ><g-image src="~/assets/img/twitter.svg" alt="Twitter"
@@ -29,18 +29,22 @@
         </li>
       </ul>
 
-      <ul class="header__cta">
+      <ul class="header__cta hide-for-mobile">
         <li><g-link to="/">Subscribe</g-link></li>
       </ul>
-      
+      <g-link to="/" class="header__hamburger hide-for-desktop"> 
+        <span></span>
+        <span></span>
+        <span></span>
+      </g-link>
     </div>
-
+    
     <div class="header__logo">
-      <g-link to="/" alt="Cooper Hollmaier">CH</g-link>
-    </div>
+        <g-link to="/" alt="Cooper Hollmaier">CH</g-link>
+      </div>
 
-    <div class="header__menu">
-      <ul class="header__menu__ul">
+    <div class="header__menu ">
+      <ul class="header__menu__ul hide-for-mobile ">
         <li><a href="/">Home</a></li>
         <li><a href="/talks">Talks</a></li>
         <li><a href="/code">Code</a></li>
@@ -50,7 +54,9 @@
   </header>
 </template>
 
-<script></script>
+<script>
+
+</script>
 
 <style lang="scss">
 @import "~/assets/scss/mixins";
@@ -63,16 +69,12 @@
     minmax(1.2rem, 1fr);
   grid-template-rows: auto;
 
-  @include breakpoint-down(medium) {
-    border-bottom: 1px solid #eee;
-    margin-bottom: 0.5rem;
-  }
-
   &__top {
     grid-column: 2;
     display: inline-flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    padding:  10px 0 5px 0 ;
   }
 
   &__social {
@@ -82,8 +84,35 @@
     li {
       margin: 0 0.75rem 0 0;
     }
-    @include breakpoint-down(medium) {
-      display: none;
+
+  }
+
+  &__hamburger {
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: #303030;
+      transition: all 300ms ease-in-out;
+      transform-origin: left center;
+
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+    &.open{
+      > span:first-child{
+        transform: rotate(45deg);
+
+      }
+      > span:nth-child(2){
+        opacity: 0;
+      }
+      > span:last-child{
+        transform: rotate(-45deg);
+
+      }
     }
   }
 
@@ -101,9 +130,6 @@
       margin: 0 0 0 1rem;
     }
 
-    @include breakpoint-down(medium) {
-      display: none;
-    }
   }
 
   &__logo {
@@ -113,7 +139,7 @@
     font-weight: 900;
     text-align: center;
     color: #405e58;
-    padding: .75rem .75rem .75rem 0;
+    padding: 0.75rem 0.75rem 0.75rem 0;
 
     a {
       color: #405e58;
@@ -143,9 +169,7 @@
       color: #303030;
     }
 
-    @include breakpoint-down(medium) {
-      display: none;
-    }
+   
   }
   &__menu__ul {
     li {
@@ -159,6 +183,4 @@
 ul li {
   display: inline-block;
 }
-
-
 </style>
