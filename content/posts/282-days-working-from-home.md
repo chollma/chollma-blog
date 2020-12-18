@@ -1,6 +1,6 @@
 ---
 title: "282 Days: Working from Home"
-description: "Insert a Description"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit tortor eu metus scelerisque condimentum. Ut pulvinar volutpat tempus. Nulla vitae enim posuere, rutrum risus placerat laoreet. "
 date: 2020-12-09
 ---
 

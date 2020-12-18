@@ -28,16 +28,16 @@
           /></g-link>
         </li>
       </ul>
-      
+
       <ul class="header__cta">
         <li><g-link to="/">Subscribe</g-link></li>
       </ul>
+      
     </div>
-     
+
     <div class="header__logo">
       <g-link to="/" alt="Cooper Hollmaier">CH</g-link>
     </div>
-    
 
     <div class="header__menu">
       <ul class="header__menu__ul">
@@ -47,8 +47,6 @@
         <li><a href="/articles">Blog</a></li>
       </ul>
     </div>
-
-   
   </header>
 </template>
 
@@ -64,6 +62,11 @@
     minmax(auto, 80ch)
     minmax(1.2rem, 1fr);
   grid-template-rows: auto;
+
+  @include breakpoint-down(medium) {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0.5rem;
+  }
 
   &__top {
     grid-column: 2;
@@ -110,7 +113,7 @@
     font-weight: 900;
     text-align: center;
     color: #405e58;
-    padding-bottom: 0.75rem;
+    padding: .75rem .75rem .75rem 0;
 
     a {
       color: #405e58;
@@ -128,7 +131,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     &:before,
     &:after {
       content: "";
@@ -141,14 +144,7 @@
     }
 
     @include breakpoint-down(medium) {
-      margin-bottom: 0;
-      a {
-        display: none;
-      }
-
-      &:after {
-        display: none;
-      }
+      display: none;
     }
   }
   &__menu__ul {
@@ -158,11 +154,11 @@
       text-align: center;
     }
   }
-
-
 }
 
 ul li {
   display: inline-block;
 }
+
+
 </style>
