@@ -1,9 +1,7 @@
 <template>
   <Layout>
     <main class="archive">
-      <header class="archive__header">
-        <h1>Articles</h1>
-      </header>
+        <h1 class="archive__heading">Latest Posts</h1>
       <section class="archive__list">
         <PostList
           v-for="edge in $page.allPost.edges"
@@ -55,7 +53,7 @@ query {
   display: grid;
   grid-template-columns:
     minmax(1.2rem, 1fr)
-    minmax(auto, 70ch)
+    minmax(auto, 80ch)
     minmax(1.2rem, 1fr);
   padding-bottom: 3rem;
 
@@ -65,6 +63,13 @@ query {
     color:black;
     display: inline-block;
     font-size: 14px;
+  }
+
+  &__heading {
+    grid-column: 2;
+    font-weight: 400;
+    border-bottom: 1px solid #eee;
+    font-family: "Lato", sans-serif;
   }
 
   &__list {

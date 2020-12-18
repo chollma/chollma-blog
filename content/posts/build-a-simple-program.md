@@ -1,6 +1,6 @@
 ---
 title: "Building a Simple Program"
-description: "Now that we've learned the basics the Python IDE, let's put our programming skills to work."
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam nulla, maximus sit amet ultricies sit amet, faucibus sed arcu. Nam auctor pharetra volutpat. Donec eget tellus nec lectus et. "
 date: 2020-09-12
 ---
 

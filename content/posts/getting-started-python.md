@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with Python"
-description: "Learn how to get Python installed on your machine and build a small program to check your own code."
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida orci at urna scelerisque, non viverra sapien laoreet. Integer eleifend tristique dictum. Sed eget ligula vitae arcu molestie nam. "
 date: 2020-09-11
 ---
 

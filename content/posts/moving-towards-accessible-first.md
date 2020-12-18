@@ -1,6 +1,6 @@
 ---
 title: "Moving Towards Accessible First"
-description: "As you learn more about accessibility, you'll find that we haven't made life easy for all. We've made it easy for some."
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat massa a pulvinar finibus. Quisque varius sollicitudin massa, vel vehicula nisi. Suspendisse neque arcu, viverra a metus fusce. "
 date: 2020-10-28
 ---
 

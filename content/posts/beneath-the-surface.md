@@ -1,6 +1,6 @@
 ---
 title: "Beneath the Surface: Visual Disabilities"
-description: "Visual disabilities are among the most common. They can range from partial vision loss, to a sensitivity to certain colors and decreased acuity, to complete uncorrectable loss."
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas est justo, pulvinar in ipsum vitae, tristique cursus magna. Suspendisse pretium felis ipsum, sed feugiat velit fringilla a. Sed proin. "
 date: 2020-10-21
 ---
 
