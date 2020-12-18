@@ -1,87 +1,168 @@
 <template>
   <header class="header">
-    <nav class="container">
-      <div class="header__links ">
-        <g-link class="header__menu" to="/">Home</g-link>
-        <g-link class="header__menu" to="/talks/">Talks</g-link>
-        <g-link class="header__menu" to="/code/">Code</g-link>
-        <g-link class="header__menu--highlight" to="/articles/">Blog</g-link>
-      </div>
-    </nav>
+    <div class="header__top">
+      <ul class="header__social">
+        <li>
+          <g-link to="https://twitter.com/CooperHollmaier"
+            ><g-image src="~/assets/img/twitter.svg" alt="Twitter"
+          /></g-link>
+        </li>
+        <li>
+          <g-link to="https://www.instagram.com/cooperhollmaier/"
+            ><g-image src="~/assets/img/instagram.svg" alt="Instagram"
+          /></g-link>
+        </li>
+        <li>
+          <g-link to="https://www.youtube.com/channel/UCWyuE3usgzzuPIdmR_6iRWA">
+            <g-image src="~/assets/img/youtube.svg" alt="YouTube"
+          /></g-link>
+        </li>
+        <li>
+          <g-link to="https://dev.to/chollma">
+            <g-image src="~/assets/img/dev-dot-to.svg" alt="Dev.to"
+          /></g-link>
+        </li>
+        <li>
+          <g-link to="https://github.com/chollma"
+            ><g-image src="~/assets/img/github.svg" alt="Github"
+          /></g-link>
+        </li>
+      </ul>
+      
+      <ul class="header__cta">
+        <li><g-link to="/">Subscribe</g-link></li>
+      </ul>
+    </div>
+     
+    <div class="header__logo">
+      <g-link to="/" alt="Cooper Hollmaier">CH</g-link>
+    </div>
+    
+
+    <div class="header__menu">
+      <ul class="header__menu__ul">
+        <li><a href="/">Home</a></li>
+        <li><a href="/talks">Talks</a></li>
+        <li><a href="/code">Code</a></li>
+        <li><a href="/articles">Blog</a></li>
+      </ul>
+    </div>
+
+   
   </header>
 </template>
 
 <script></script>
 
 <style lang="scss">
+@import "~/assets/scss/mixins";
+
 .header {
-  justify-content: center;
   display: grid;
   grid-template-columns:
     minmax(1.2rem, 1fr)
-    minmax(auto, 70ch)
+    minmax(auto, 80ch)
     minmax(1.2rem, 1fr);
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-  text-transform: uppercase;
-  line-height: 72px;
-  margin-bottom: 10px;
-  justify-self: center;
+  grid-template-rows: auto;
 
-  nav {
-    font-weight: 500;
+  &__top {
     grid-column: 2;
-    justify-self: center;
-    padding-top: 1.0625rem;
-    padding-bottom: 1.0625rem;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
   }
 
+  &__social {
+    grid-column: 2;
+    max-width: 50%;
+    padding: 0;
+    li {
+      margin: 0 0.75rem 0 0;
+    }
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+
+  &__cta {
+    grid-column: 2;
+    text-align: right;
+    font-size: 1.125rem;
+    max-width: 50%;
+
+    a {
+      color: #303030;
+    }
+
+    li {
+      margin: 0 0 0 1rem;
+    }
+
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    grid-column: 2;
+    font-family: "Lato", sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    color: #405e58;
+    padding-bottom: 0.75rem;
+
+    a {
+      color: #405e58;
+    }
+
+    @include breakpoint-down(medium) {
+      text-align: left;
+      font-size: 2rem;
+      max-width: 50%;
+    }
+  }
   &__menu {
-    background: white;
-    position: relative;
-    width: calc(100% - 3rem);
-    transform: translate(-50%);
-    margin-top: 1.5rem;
-    &--highlight {
-      background: #405e58;
-      color: white;
-      padding: 0.3125rem;
+    grid-column: 2;
+    font-family: "Vollkorn", serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    &:before,
+    &:after {
+      content: "";
+      background: hsla(0, 0%, 39%, 1);
+      padding: 0.5px;
+      flex: 100%;
     }
     a {
-      color: black;
-      padding: 0.625rem;
-      display: block;
+      color: #303030;
+    }
+
+    @include breakpoint-down(medium) {
+      margin-bottom: 0;
+      a {
+        display: none;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &__menu__ul {
+    li {
+      display: inline-block;
+      margin: 0.25rem 1rem;
       text-align: center;
     }
   }
 
-  &__links {
-    grid-column: 2;
-    font-weight: 600;
-    a {
-      font-size: 0.875rem;
-      transition: color 200ms ease-in-out;
-      position: relative;
-      &:not(:last-child) {
-        margin-right: 32px;
-      }
-      &:hover {
-        color: #585656;
 
-        &::before {
-          content: "";
-          position: absolute;
-          width: 100%;
-          display: block;
-          height: 3px;
-          background: #405e58;
-          left: 0;
-          right: 0;
-          bottom: -15px;
-        }
-      }
-    }
-  }
+}
+
+ul li {
+  display: inline-block;
 }
 </style>
