@@ -20,7 +20,7 @@
     </div>
     <div class="footer__copyright">
         <div>2020 Cooper Hollmaier. All Rights Reserved.</div>
-        <div>  <g-link to="/privacy/">Privacy</g-link> |  <g-link to="/accessibility">Accessibility</g-link></div>
+        <div class="links">  <g-link to="/privacy/">Privacy</g-link> |  <g-link to="/accessibility">Accessibility</g-link></div>
     </div>
     </div>
       </div>
@@ -68,6 +68,8 @@ export default {};
         grid-area: cta;
         justify-self: right;
         align-self: end;
+                 margin-bottom: 1.875rem;
+
     }
     
     a{
@@ -153,11 +155,16 @@ export default {};
       color: gray;
       display:inline-block;
     @include breakpoint-up(large){
+
          grid-area: copyright;
          align-self: end;
          justify-self: end;
      }
+    
       
+  }
+  .links {
+    padding: .75rem;
   }
 }
 

@@ -28,21 +28,19 @@
           /></g-link>
         </li>
       </ul>
-
+      <div class="header__logo">
+        <g-link to="/" alt="Cooper Hollmaier">CH</g-link>
+      </div>
       <ul class="header__cta hide-for-mobile">
         <li><g-link to="/">Subscribe</g-link></li>
       </ul>
-      <g-link to="/" class="header__hamburger hide-for-desktop"> 
+
+      <g-link to="/" class="header__hamburger hide-for-desktop">
         <span></span>
         <span></span>
         <span></span>
       </g-link>
     </div>
-    
-    <div class="header__logo">
-        <g-link to="/" alt="Cooper Hollmaier">CH</g-link>
-      </div>
-
     <div class="header__menu ">
       <ul class="header__menu__ul hide-for-mobile ">
         <li><a href="/">Home</a></li>
@@ -54,9 +52,7 @@
   </header>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style lang="scss">
 @import "~/assets/scss/mixins";
@@ -67,14 +63,13 @@
     minmax(1.2rem, 1fr)
     minmax(auto, 80ch)
     minmax(1.2rem, 1fr);
-  grid-template-rows: auto;
 
   &__top {
     grid-column: 2;
     display: inline-flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding:  10px 0 5px 0 ;
+    padding: 10px 0 5px 0;
   }
 
   &__social {
@@ -84,7 +79,6 @@
     li {
       margin: 0 0.75rem 0 0;
     }
-
   }
 
   &__hamburger {
@@ -94,24 +88,21 @@
       height: 2px;
       background-color: #303030;
       transition: all 300ms ease-in-out;
-      transform-origin: left center;
-
+      transform-origin: 3px 1px;
 
       &:not(:last-child) {
         margin-bottom: 5px;
       }
     }
-    &.open{
-      > span:first-child{
+    &.open {
+      > span:first-child {
         transform: rotate(45deg);
-
       }
-      > span:nth-child(2){
+      > span:nth-child(2) {
         opacity: 0;
       }
-      > span:last-child{
+      > span:last-child {
         transform: rotate(-45deg);
-
       }
     }
   }
@@ -129,15 +120,14 @@
     li {
       margin: 0 0 0 1rem;
     }
-
   }
 
   &__logo {
-    grid-column: 2;
     font-family: "Lato", sans-serif;
-    font-size: 4rem;
     font-weight: 900;
-    text-align: center;
+    text-align: left;
+    font-size: 2rem;
+    max-width: 50%;
     color: #405e58;
     padding: 0.75rem 0.75rem 0.75rem 0;
 
@@ -145,10 +135,9 @@
       color: #405e58;
     }
 
-    @include breakpoint-down(medium) {
-      text-align: left;
-      font-size: 2rem;
-      max-width: 50%;
+    @include breakpoint-up(large) {
+      font-size: 4rem;
+      text-align: center;
     }
   }
   &__menu {
@@ -162,14 +151,16 @@
     &:after {
       content: "";
       background: hsla(0, 0%, 39%, 1);
-      padding: 0.5px;
+      padding: 0.25px;
       flex: 100%;
+      
+      @include breakpoint-up(large) {
+        padding: .5px;
+      }
     }
     a {
       color: #303030;
     }
-
-   
   }
   &__menu__ul {
     li {

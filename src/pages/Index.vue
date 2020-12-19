@@ -104,8 +104,7 @@ export default {
     max-width: 50%;
     justify-self: center;
     border-radius: 50%;
-    
-    padding: 0.5em;
+    padding: 2rem 0 0 0;
   }
 
   &__head {
