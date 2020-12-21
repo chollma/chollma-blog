@@ -52,7 +52,7 @@
           </p>
           <p>
             To hire me for your event, check out my
-            <g-link to="/talks">speaker rider</g-link>.
+            <g-link to="/talks/">speaker rider</g-link>.
           </p>
         </div>
       </div>
