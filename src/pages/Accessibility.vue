@@ -7,9 +7,6 @@
 <script>
 
 export default {
-  components: {
-    PostList,
-  },
   title: "Accessibility",
   meta: [
       {
