@@ -19,9 +19,14 @@ export default {
   components: {
     PostList,
   },
-  metaInfo: {
-    title: "A simple blog",
-  },
+  title: "Articles",
+  meta: [
+      {
+        name: "description",
+        content:
+          "Hire me to contribute to your next conference, webinar, or podcast!",
+      },
+    ],
 };
 </script>
 
