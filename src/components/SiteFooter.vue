@@ -20,7 +20,7 @@
     </div>
     <div class="footer__copyright">
         <div>2020 Cooper Hollmaier. All Rights Reserved.</div>
-        <div class="links">  <g-link to="/privacy/">Privacy</g-link> |  <g-link to="/accessibility">Accessibility</g-link></div>
+        <div class="links">  <g-link to="/privacy/">Privacy</g-link> |  <g-link to="/accessibility/">Accessibility</g-link></div>
     </div>
     </div>
       </div>

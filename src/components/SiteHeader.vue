@@ -35,7 +35,11 @@
         <li><g-link to="/">Subscribe</g-link></li>
       </ul>
 
-      <g-link to="/" class="header__hamburger hide-for-desktop">
+      <g-link
+        to="/"
+        id="btnHamburger"
+        class="header__hamburger hide-for-desktop"
+      >
         <span></span>
         <span></span>
         <span></span>
@@ -52,7 +56,22 @@
   </header>
 </template>
 
-<script></script>
+<script>
+export default {
+  components: {},
+  metaInfo: {},
+  mounted() {
+    const btnHamburger = document.querySelector("#btnHamburger");
+    btnHamburger.addEventListener("click", function() {
+      if (btnHamburger.classList.contains("open")) {
+        btnHamburger.classList.remove("open");
+      } else {
+        btnHamburger.classList.add("open");
+      }
+    });
+  },
+};
+</script>
 
 <style lang="scss">
 @import "~/assets/scss/mixins";
@@ -153,9 +172,9 @@
       background: hsla(0, 0%, 39%, 1);
       padding: 0.25px;
       flex: 100%;
-      
+
       @include breakpoint-up(large) {
-        padding: .5px;
+        padding: 0.5px;
       }
     }
     a {
