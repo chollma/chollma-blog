@@ -48,9 +48,9 @@
     <div class="header__menu ">
       <ul class="header__menu__ul hide-for-mobile ">
         <li><a href="/">Home</a></li>
-        <li><a href="/talks">Talks</a></li>
-        <li><a href="/code">Code</a></li>
-        <li><a href="/articles">Blog</a></li>
+        <li><a href="/talks/">Talks</a></li>
+        <li><a href="/code/">Code</a></li>
+        <li><a href="/articles/">Blog</a></li>
       </ul>
     </div>
   </header>
