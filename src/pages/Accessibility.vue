@@ -1,6 +1,17 @@
 <template>
   <Layout>
-
+    <main class="page">
+      <div class="page__column">
+        <div class="page__body">
+          <h1 class="page__heading">
+            Accessibility Statement
+          </h1>
+          <p>
+            I'm committed to ensuring that everyone visting CooperHollmaier.com feels welcome and included. I am continually improving the user experience for everyone, and applying the relevant accessibility standards. 
+          </p>
+        </div>
+      </div>
+    </main>
   </Layout>
 </template>
 
@@ -19,6 +30,45 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss">
 
+.page {
+  display: grid;
+  grid-template-columns:
+    minmax(1.2rem, 1fr)
+    minmax(auto, 80ch)
+    minmax(1.2rem, 1fr);
+  font-family: "Lato", san-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+  &__column {
+    grid-column: 2;
+  }
+
+  &__heading {
+    &--primary {
+      display: none;
+      font-weight: 900;
+      margin-top: 0.85rem;
+      margin-bottom: 0.85rem;
+    }
+    &--secondary {
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: "Vollkorn";
+    }
+  }
+
+  &__body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 5rem;
+  }
+
+  &__list__item{
+    display: list-item;
+  }
+}
 </style>
