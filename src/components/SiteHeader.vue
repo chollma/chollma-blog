@@ -59,7 +59,6 @@ export default {
   mounted() {
     const btnHamburger = document.querySelector("#btnHamburger");
     const menu = document.querySelector("#menu");
-    menu.style.display = "none";
     btnHamburger.addEventListener("click", function() {
       if (btnHamburger.classList.contains("open")) {
         btnHamburger.classList.remove("open");
@@ -183,11 +182,15 @@ export default {
   }
   &__menu__ul {
     padding-left: 0;
+    @include breakpoint-down(medium){
+      display:none;
+    }
     li {
       display: block;
       margin: 1rem 1rem;
       text-align: center;
     }
+    
     @include breakpoint-up(large) {
       display: block;
       li {

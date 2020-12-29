@@ -9,7 +9,7 @@
 module.exports = {
   siteName: 'Cooper Hollmaier',
   titleTemplate: '%s | Cooper Hollmaier',
-  siteURL: 'https://cooperhollmaier.com',
+  
  
   plugins: [
     {
