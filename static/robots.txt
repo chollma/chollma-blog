@@ -1,1 +1,1 @@
-#Robots.txt for cooperhollmaier.netlify.app
+#Robots.txt for cooperhollmaier.com
