@@ -35,15 +35,11 @@
         <li><g-link to="/">Subscribe</g-link></li>
       </ul>
 
-      <g-link
-        to="/"
-        id="btnHamburger"
-        class="header__hamburger hide-for-desktop"
-      >
+      <a href="#" id="btnHamburger" class="header__hamburger hide-for-desktop">
         <span></span>
         <span></span>
         <span></span>
-      </g-link>
+      </a>
     </div>
     <div class="header__menu ">
       <ul id="menu" class="header__menu__ul ">
@@ -62,7 +58,8 @@ export default {
   metaInfo: {},
   mounted() {
     const btnHamburger = document.querySelector("#btnHamburger");
-    const menu = document.querySelector('#menu');
+    const menu = document.querySelector("#menu");
+    menu.style.display = "none";
     btnHamburger.addEventListener("click", function() {
       if (btnHamburger.classList.contains("open")) {
         btnHamburger.classList.remove("open");
@@ -185,20 +182,18 @@ export default {
     }
   }
   &__menu__ul {
-      display:none;
-      padding-left: 0;
-      li {
+    padding-left: 0;
+    li {
       display: block;
       margin: 1rem 1rem;
       text-align: center;
-      
-      }
+    }
     @include breakpoint-up(large) {
-      display:block;
+      display: block;
       li {
-      display: inline-block;
-      margin: 0.25rem 1rem;
-      text-align: center;
+        display: inline-block;
+        margin: 0.25rem 1rem;
+        text-align: center;
       }
     }
   }

@@ -7,13 +7,13 @@
             Talks
           </h1>
           <p>
-            I love sharing the lessons I've learned, the knowledge I've gained,
-            and mentoring others looking to start a career in search engine
-            optimization, digital marketing, communications, or a related field.
+           I love sharing the lessons I've learned, the knowledge I've gained,
+           and mentoring others looking to start a career in search engine
+           optimization, digital marketing, communications, or a related field.
           </p>
           <p>
-            If you are looking for a contributor, you can reach out on <a href="https://twitter.com/CooperHollmaier">Twitter</a>
-            or <a href="mailto:cooperjhollmaier@gmail.com">email me</a>.
+            If you are looking for a contributor, please take note of my speaker rider below. You can reach out about hiring me on <a href="https://twitter.com/CooperHollmaier">Twitter</a>
+            or <a href="mailto:cooperjhollmaier@gmail.com">send me an email</a>.
           </p>
           <h2 class="page__heading page__heading--secondary">
             Past Presentations
@@ -34,9 +34,22 @@
             </li>
           </ul>
           <h2 class="page__heading page__heading--secondary">Speaker Rider</h2>
-          <h3>Hosting</h3>
-          <h3>Logistics</h3>
-          <h3>Final Thoughts</h3>
+          <p>I'm honored that you'd like to include me in your event. I believe in creating opportunities that are inclusive and accessible to all.</p><p>Before considering me as a contributor, please note the following guidelines below. These are a work-in-progress intended to promote the inclusion of diverse perspectives other than mine as a cisgender white male.</p>
+          <h3 class="page__heading page__heading--secondary">Hosting</h3>
+          <ul>
+            <li class="page__list__item">I ask that travel to and from the event is provided.</li>
+            <li class="page__list__item">I ask that lodging be provided for the full length of the event.</li>
+            <li class="page__list__item">I ask for a ticket to the event. I want to engage with other attendees and see other talks!</li>
+            <li class="page__list__item">I ask for a speaker fee because I value my time (and hope you do too). Preparing for talks and events takes time away from my other obligations.</li>
+          </ul>
+          <h3 class="page__heading page__heading--secondary">Logistics</h3>
+          <ul>
+            <li class="page__list__item">A publically accessible <strong>Code of Conduct</strong> is required. This document must declare your dedication to creating a safe space, clearly state which behaviors are expected and which are not tolerated, and provide a place for folks to report problems and seek assistance.</li>
+            <li class="page__list__item">I won't be part of a white-majority, all-men lineup. I want to ensure underrepresented voices are included in the conversation.</li>
+            <li class="page__list__item">Feel free to record me, but let me know ahead of time and know that I can only represent my personal views and not those of any company.</li>
+          </ul>
+          <h3 class="page__heading page__heading--secondary">Final Thoughts</h3>
+            <p>I really appreciate you taking the time to read through these points. I list these out because I want to speak at events that are inclusive, accessible, and represent the diverse perspectives around us. If you have any questions or disagree with any of the information above, please reach out and provide that feedback.</p>
         </div>
       </div>
     </main>
