@@ -63,7 +63,7 @@ export default {
         },
         {
           name: "twitter:creator",
-          content: "@drewtown_chi"
+          content: "@cooperhollmaier"
         },
         {
           property: "og:description",
