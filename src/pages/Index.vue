@@ -63,9 +63,10 @@
 
 <script>
 export default {
-  components: {},
-  metaInfo: {
-    title: "Cooper Hollmaier",
+ metaInfo: {
+    title: "Home",
+    titleTemplate: null,
+
     meta: [
       {
         name: "description",
@@ -74,10 +75,9 @@ export default {
       },
     ],
   },
-   mounted() {
- 
-    },
-};
+  
+  }
+  
 </script>
 
 <style lang="scss">

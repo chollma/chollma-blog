@@ -18,15 +18,18 @@
 <script>
 
 export default {
-  title: "Accessibility",
-  meta: [
+  metaInfo: {
+    title: "Accessibility",
+    meta: [
       {
         name: "description",
         content:
           "I believe in creating accessible and inclusive experiences. Learn more about what we're doing for this mission with Cooperhollmaier.com",
       },
     ],
-};
+  },
+    
+}
 </script>
 
 

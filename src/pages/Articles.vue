@@ -19,15 +19,19 @@ export default {
   components: {
     PostList,
   },
-  title: "Articles",
-  meta: [
+ metaInfo: {
+    title: "Articles",
+    meta: [
       {
         name: "description",
         content:
-          "Hire me to contribute to your next conference, webinar, or podcast!",
+          "Read blog posts, how-to guides, and experiences from me.",
       },
     ],
-};
+  },
+    
+}
+
 </script>
 
 <page-query>

@@ -13,8 +13,9 @@ export default {
   components: {
     SiteFooter,
   },
-  metaInfo: {
-    title: "A simple blog",
+   metaInfo: {
+    
+    titleTemplate: '%s | Cooper Hollmaier'
   },
 };
 </script>

@@ -61,7 +61,6 @@ export default {
   components: {},
   metaInfo: {
     title: 'Talks',
-    titleTemplate: '%s | Cooper Hollmaier',
     meta: [
       { name: 'description', content: 'Hire me to contribute to your next conference, webinar, or podcast!' }
     ],

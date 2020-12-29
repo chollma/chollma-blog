@@ -7,7 +7,6 @@
 
 
 module.exports = {
-  siteName: 'Cooper Hollmaier',
   titleTemplate: '%s | Cooper Hollmaier',
   
  
