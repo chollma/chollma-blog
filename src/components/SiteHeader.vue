@@ -46,7 +46,7 @@
       </g-link>
     </div>
     <div class="header__menu ">
-      <ul class="header__menu__ul hide-for-mobile ">
+      <ul id="menu" class="header__menu__ul ">
         <li><a href="/">Home</a></li>
         <li><a href="/talks/">Talks</a></li>
         <li><a href="/code/">Code</a></li>
@@ -62,11 +62,14 @@ export default {
   metaInfo: {},
   mounted() {
     const btnHamburger = document.querySelector("#btnHamburger");
+    const menu = document.querySelector('#menu');
     btnHamburger.addEventListener("click", function() {
       if (btnHamburger.classList.contains("open")) {
         btnHamburger.classList.remove("open");
+        menu.style.display = "none";
       } else {
         btnHamburger.classList.add("open");
+        menu.style.display = "block";
       }
     });
   },
@@ -182,10 +185,21 @@ export default {
     }
   }
   &__menu__ul {
-    li {
+      display:none;
+      padding-left: 0;
+      li {
+      display: block;
+      margin: 1rem 1rem;
+      text-align: center;
+      
+      }
+    @include breakpoint-up(large) {
+      display:block;
+      li {
       display: inline-block;
       margin: 0.25rem 1rem;
       text-align: center;
+      }
     }
   }
 }
