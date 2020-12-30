@@ -1,6 +1,6 @@
 ---
 title: "Talking about Disability"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in tempor odio. Cras ultrices sem est, sit amet suscipit ex pulvinar nec. Cras lorem justo, faucibus nec interdum non, dictum sit amet amet. "
+description: "The past year and a half has been a whirlwind. My wife and I relocated to the Pacific Northwest, having only visited it once (during the interview) so that I could accept what I still consider to be my dream job here in Seattle."
 date: 2020-10-17
 ---
 The past year and a half has been a whirlwind. My wife and I relocated to the Pacific Northwest, having only visited it once (during the interview) so that I could accept what I still consider to be my dream job here in Seattle. Fast forward to today, and we are in the midst of one of the most chaotic years in United States history. But let's not focus on all the chaos. Rather, let's talk about the impact it has had on my life. Early in my career, my interests were far and wide — I aspired to be a generalist rather than a specialist because I was unsure of what I wanted to do for a living. I chased opportunity after opportunity for the skills and for the money. Four and a half years later, I'm sitting here with a vastly different view of the world. I've awakened a deep passion for inclusivity, structural change, and speaking out.

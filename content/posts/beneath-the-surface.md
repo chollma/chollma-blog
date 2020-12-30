@@ -1,6 +1,6 @@
 ---
 title: "Beneath the Surface: Visual Disabilities"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas est justo, pulvinar in ipsum vitae, tristique cursus magna. Suspendisse pretium felis ipsum, sed feugiat velit fringilla a. Sed proin. "
+description: "The more you learn about people with disabilities, the more you too can be an advocate for change. Together, we can reframe the way we as a society think, build, and talk about inclusivity."
 date: 2020-10-21
 ---
 

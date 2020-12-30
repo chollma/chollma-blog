@@ -3,7 +3,7 @@
     <main class="page">
       <div class="page__column">
         <div class="page__body">
-          <h1 class="page__heading">
+          <h1 class="page__heading page__heading--primary">
             Talks
           </h1>
           <p>
@@ -87,8 +87,8 @@ export default {
 
   &__heading {
     &--primary {
-      display: none;
-      font-weight: 900;
+      font-family: Vollkorn;
+      font-weight: 700;
       margin-top: 0.85rem;
       margin-bottom: 0.85rem;
     }

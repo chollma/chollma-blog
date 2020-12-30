@@ -1,6 +1,6 @@
 ---
 title: "Moving Towards Accessible First"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat massa a pulvinar finibus. Quisque varius sollicitudin massa, vel vehicula nisi. Suspendisse neque arcu, viverra a metus fusce. "
+description: "I think we take our own experiences for granted. We assume that our friends have heard the latest soundbite. We assume they've streamed the latest album. We assume they’ll listen to a book on tape to keep them entertained on their cross-country road trip..."
 date: 2020-10-28
 ---
 

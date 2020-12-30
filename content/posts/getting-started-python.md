@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with Python"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida orci at urna scelerisque, non viverra sapien laoreet. Integer eleifend tristique dictum. Sed eget ligula vitae arcu molestie nam. "
+description: "Whether you're a software engineer, data scientist, or someone who wants to make tedious tasks easy, Python might be the programming language you've been dreaming of."
 date: 2020-09-11
 ---
 

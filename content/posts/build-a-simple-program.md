@@ -1,6 +1,6 @@
 ---
 title: "Building a Simple Program"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam nulla, maximus sit amet ultricies sit amet, faucibus sed arcu. Nam auctor pharetra volutpat. Donec eget tellus nec lectus et. "
+description: "You should also have some basic knowledge about how an Integrated Development Environment (IDE) works. Now let's put some of the building blocks we learned together and solve a real problem with a program we'll write below."
 date: 2020-09-12
 ---
 

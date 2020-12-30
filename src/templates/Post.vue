@@ -67,7 +67,7 @@ export default {
         },
         {
           property: "og:description",
-          cotent: this.$page.post.excerpt
+          content: this.$page.post.excerpt
         },
         {
           property: "og:image",

@@ -32,7 +32,7 @@
         <g-link to="/" alt="Cooper Hollmaier">CH</g-link>
       </div>
       <ul class="header__cta hide-for-mobile">
-        <li><g-link to="/">Subscribe</g-link></li>
+        <li><a target="_blank" rel="noopener" href="https://prodigious-pioneer-1471.ck.page/617bb6fde8">Subscribe</a></li>
       </ul>
 
       <a href="#" id="btnHamburger" class="header__hamburger hide-for-desktop">

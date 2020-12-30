@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <main class="archive">
-        <h1 class="archive__heading">Latest Posts</h1>
+        <h1 class="archive__heading ">Latest Posts</h1>
       <section class="archive__list">
         <PostList
           v-for="edge in $page.allPost.edges"
@@ -76,10 +76,14 @@ query {
 
   &__heading {
     grid-column: 2;
-    font-weight: 400;
+    font-weight: 700;
     border-bottom: 1px solid #eee;
-    font-family: "Lato", sans-serif;
+    font-family: "Vollkorn", sans-serif;
+      margin-top: 0.85rem;
+      margin-bottom: 0.85rem;
   }
+
+
 
   &__list {
     grid-column: 2;
