@@ -40,6 +40,7 @@ query Post ($path: String!) {
     content
     date (format: "MMMM DD, YYYY")
     timeToRead
+   
   }
 }
 </page-query>
@@ -83,7 +84,7 @@ export default {
   display: grid;
   grid-template-columns:
     minmax(1.2rem, 1fr)
-    minmax(auto, 70ch)
+    minmax(auto, 80ch)
     minmax(1.2rem, 1fr);
   font-family: "Lato", san-serif;
   font-weight: 400;
