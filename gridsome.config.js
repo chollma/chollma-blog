@@ -7,8 +7,9 @@
 
 
 module.exports = {
+  siteUrl: 'https://cooperhollmaier.com',
   titleTemplate: '%s | Cooper Hollmaier',
-  icon: './src/assets/img/favicon.png',
+  icon: '~/src/assets/img/favicon.png',
   plugins: [
     {
     use: '@gridsome/source-filesystem',
@@ -19,6 +20,5 @@ module.exports = {
     },
     
    
-
   }]
 }

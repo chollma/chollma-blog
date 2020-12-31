@@ -4,7 +4,6 @@
       <div class="article__column">
         <div class="article__top">
           <div class="article__subhead">
-            subhead
           </div>
           <h1 class="article__heading article__heading--primary">
             {{ $page.post.title }}
@@ -40,7 +39,7 @@ query Post ($path: String!) {
     content
     date (format: "MMMM DD, YYYY")
     timeToRead
-   
+    
   }
 }
 </page-query>
@@ -145,6 +144,7 @@ export default {
       margin-top: 0.85rem;
       margin-bottom: 0.85rem;
     }
+
   }
 }
 </style>
