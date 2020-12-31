@@ -1,9 +1,9 @@
 <template>
   <article class="card">
     <p class="card__date" v-html="post.date" />
-    <h2 class="card__title" v-html="post.title"/>
+    <h2 class="card__title" v-html="post.title" />
     <p class="card__description" v-html="post.description" />
-    <g-link :to="post.path" class="card__link" >Read Full Post</g-link>
+    <g-link :to="post.path" class="card__link">Read Full Post</g-link>
   </article>
 </template>
 
@@ -17,7 +17,7 @@ export default {
 .card {
   padding: 0.625rem 1.25rem;
   margin: 1.25rem 0;
-  border-left: 1px solid #EEE;;
+  border-left: 1px solid #eee;
   &__title {
     font-size: 20px;
     font-weight: 900;
@@ -41,16 +41,16 @@ export default {
     color: gray;
   }
   &__link {
-    color:black;
+    color: black;
     font-family: "Lato", sans-serif;
-    font-size: .875rem;
+    font-size: 0.875rem;
     border: 1px solid black;
-    padding: .175rem .5rem;
+    padding: 0.175rem 0.5rem;
     margin: 0;
     text-transform: uppercase;
     text-decoration: none;
     &:hover {
-      background-color: #405e58 ;
+      background-color: #405e58;
       color: white;
     }
   }

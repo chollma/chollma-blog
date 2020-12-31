@@ -7,9 +7,9 @@
             Code
           </h1>
           <p>
-           Coming Soon!
+            Coming Soon!
           </p>
-            </div>
+        </div>
       </div>
     </main>
   </Layout>
@@ -33,7 +33,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 .page {
   display: grid;
   grid-template-columns:
@@ -49,7 +48,7 @@ export default {
   }
 
   &__heading {
-   &--primary {
+    &--primary {
       font-family: Vollkorn;
       font-weight: 700;
       margin-top: 0.85rem;
@@ -69,7 +68,7 @@ export default {
     padding-bottom: 5rem;
   }
 
-  &__list__item{
+  &__list__item {
     display: list-item;
   }
 }

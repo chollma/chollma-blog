@@ -32,7 +32,14 @@
         <g-link to="/" alt="Cooper Hollmaier">CH</g-link>
       </div>
       <ul class="header__cta hide-for-mobile">
-        <li><a target="_blank" rel="noopener" href="https://prodigious-pioneer-1471.ck.page/617bb6fde8">Subscribe</a></li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://prodigious-pioneer-1471.ck.page/617bb6fde8"
+            >Subscribe</a
+          >
+        </li>
       </ul>
 
       <a href="#" id="btnHamburger" class="header__hamburger hide-for-desktop">
@@ -182,15 +189,15 @@ export default {
   }
   &__menu__ul {
     padding-left: 0;
-    @include breakpoint-down(medium){
-      display:none;
+    @include breakpoint-down(medium) {
+      display: none;
     }
     li {
       display: block;
       margin: 1rem 1rem;
       text-align: center;
     }
-    
+
     @include breakpoint-up(large) {
       display: block;
       li {
