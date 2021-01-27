@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <main class="archive">
-        <h1 class="archive__heading ">Latest Posts</h1>
+      <h1 class="archive__heading ">Latest Posts</h1>
       <section class="archive__list">
         <PostList
           v-for="edge in $page.allPost.edges"
@@ -19,19 +19,16 @@ export default {
   components: {
     PostList,
   },
- metaInfo: {
+  metaInfo: {
     title: "Articles",
     meta: [
       {
         name: "description",
-        content:
-          "Read blog posts, how-to guides, and experiences from me.",
+        content: "Read blog posts, how-to guides, and experiences from me.",
       },
     ],
   },
-    
-}
-
+};
 </script>
 
 <page-query>
@@ -58,7 +55,7 @@ query {
 </page-query>
 
 <style lang="scss">
-.archive{
+.archive {
   display: grid;
   grid-template-columns:
     minmax(1.2rem, 1fr)
@@ -69,7 +66,7 @@ query {
   &__header {
     grid-column: 2;
     font-weight: 600;
-    color:black;
+    color: black;
     display: inline-block;
     font-size: 14px;
   }
@@ -79,15 +76,12 @@ query {
     font-weight: 700;
     border-bottom: 1px solid #eee;
     font-family: "Vollkorn", sans-serif;
-      margin-top: 0.85rem;
-      margin-bottom: 0.85rem;
+    margin-top: 0.85rem;
+    margin-bottom: 0.85rem;
   }
-
-
 
   &__list {
     grid-column: 2;
-    
   }
 }
 </style>

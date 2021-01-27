@@ -1,55 +1,49 @@
 <template>
   <header class="header">
-    <div class="header__top flex flex-jc-sb flex-ai-c">
-      <ul class="header__social hide-for-mobile">
-        <li>
-          <g-link to="https://twitter.com/CooperHollmaier"
-            ><g-image src="~/assets/img/twitter.svg" alt="Twitter"
-          /></g-link>
-        </li>
-        <li>
-          <g-link to="https://www.instagram.com/cooperhollmaier/"
-            ><g-image src="~/assets/img/instagram.svg" alt="Instagram"
-          /></g-link>
-        </li>
-        <li>
-          <g-link to="https://www.youtube.com/channel/UCWyuE3usgzzuPIdmR_6iRWA">
-            <g-image src="~/assets/img/youtube.svg" alt="YouTube"
-          /></g-link>
-        </li>
-        <li>
-          <g-link to="https://dev.to/chollma">
-            <g-image src="~/assets/img/dev-dot-to.svg" alt="Dev.to"
-          /></g-link>
-        </li>
-        <li>
-          <g-link to="https://github.com/chollma"
-            ><g-image src="~/assets/img/github.svg" alt="Github"
-          /></g-link>
-        </li>
-      </ul>
-      <div class="header__logo">
-        <g-link to="/" alt="Cooper Hollmaier">CH</g-link>
-      </div>
-      <ul class="header__cta hide-for-mobile">
-        <li>
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://prodigious-pioneer-1471.ck.page/617bb6fde8"
-            >Subscribe</a
-          >
-        </li>
-      </ul>
-
-      <a href="#" id="btnHamburger" class="header__hamburger hide-for-desktop">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
+    <ul class="header__social hide-for-mobile">
+      <li>
+        <g-link to="https://twitter.com/CooperHollmaier"
+          ><g-image src="~/assets/img/twitter.svg" alt="Twitter"
+        /></g-link>
+      </li>
+      <li>
+        <g-link to="https://www.instagram.com/cooperhollmaier/"
+          ><g-image src="~/assets/img/instagram.svg" alt="Instagram"
+        /></g-link>
+      </li>
+      <li>
+        <g-link to="https://www.youtube.com/channel/UCWyuE3usgzzuPIdmR_6iRWA">
+          <g-image src="~/assets/img/youtube.svg" alt="YouTube"
+        /></g-link>
+      </li>
+      <li>
+        <g-link to="https://dev.to/chollma">
+          <g-image src="~/assets/img/dev-dot-to.svg" alt="Dev.to"
+        /></g-link>
+      </li>
+      <li>
+        <g-link to="https://github.com/chollma"
+          ><g-image src="~/assets/img/github.svg" alt="Github"
+        /></g-link>
+      </li>
+    </ul>
+    <div class="header__logo">
+      <g-link to="/" alt="Cooper Hollmaier">CH</g-link>
     </div>
+
+    <button
+      onclick="window.location.href='https://prodigious-pioneer-1471.ck.page/617bb6fde8'"
+      class="header__cta"
+    >
+      Subscribe
+    </button>
+    <a href="#" id="btnHamburger" class="header__hamburger hide-for-desktop">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
     <div class="header__menu ">
-      <ul id="menu" class="header__menu__ul ">
+      <ul id="menu" class="header__menu__ul" style="padding:0;">
         <li><a href="/">Home</a></li>
         <li><a href="/talks/">Talks</a></li>
         <li><a href="/code/">Code</a></li>
@@ -66,47 +60,37 @@ export default {
   mounted() {
     const btnHamburger = document.querySelector("#btnHamburger");
     const menu = document.querySelector("#menu");
+    const wrapper = document.querySelector(".header__menu");
     btnHamburger.addEventListener("click", function() {
       if (btnHamburger.classList.contains("open")) {
         btnHamburger.classList.remove("open");
         menu.style.display = "none";
+        wrapper.style.borderBottom = "";
       } else {
         btnHamburger.classList.add("open");
         menu.style.display = "block";
+        wrapper.style.borderBottom = "1px solid #2f2f2f";
       }
     });
   },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~/assets/scss/mixins";
 
 .header {
   display: grid;
-  grid-template-columns:
-    minmax(1.2rem, 1fr)
-    minmax(auto, 80ch)
-    minmax(1.2rem, 1fr);
-
-  &__top {
-    grid-column: 2;
-    display: inline-flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    padding: 10px 0 5px 0;
-  }
-
-  &__social {
-    grid-column: 2;
-    max-width: 50%;
-    padding: 0;
-    li {
-      margin: 0 0.75rem 0 0;
-    }
-  }
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 
   &__hamburger {
+    grid-column: 3;
+    grid-row: 1 / auto;
+    align-self: center;
+    justify-self: end;
+    padding-left: 6rem;
+    padding-right: 0.75rem;
     > span {
       display: block;
       width: 26px;
@@ -119,97 +103,106 @@ export default {
         margin-bottom: 5px;
       }
     }
-    &.open {
-      > span:first-child {
-        transform: rotate(45deg);
-      }
-      > span:nth-child(2) {
-        opacity: 0;
-      }
-      > span:last-child {
-        transform: rotate(-45deg);
-      }
-    }
   }
-
   &__cta {
-    grid-column: 2;
-    text-align: right;
-    font-size: 1.125rem;
-    max-width: 50%;
+    grid-row: 1 / auto;
+    grid-column: 3;
+    height: 24px;
+    width: 87px;
+    border: 1px solid #405e58;
+    border-radius: 0px;
+    text-align: center;
+    line-height: 24px;
+    color: #405e58;
+    background: white;
+    align-self: center;
+    justify-self: start;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
 
-    a {
-      color: #303030;
+    button {
+      cursor: pointer;
     }
-
-    li {
-      margin: 0 0 0 1rem;
+    @include breakpoint-up(large) {
+      width: 240px;
+      height: 32px;
+      align-self: center;
+      justify-self: start;
+      button {
+        cursor: pointer;
+      }
     }
   }
 
   &__logo {
     font-family: "Lato", sans-serif;
-    font-weight: 900;
-    text-align: left;
     font-size: 2rem;
-    max-width: 50%;
-    color: #405e58;
-    padding: 0.75rem 0.75rem 0.75rem 0;
-
+    font-weight: 900;
+    padding-left: 0.75rem;
     a {
       color: #405e58;
     }
-
     @include breakpoint-up(large) {
-      font-size: 4rem;
-      text-align: center;
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: center;
+      align-self: center;
+      font-size: 6rem;
+      padding-left: 0;
     }
   }
+
   &__menu {
-    grid-column: 2;
-    font-family: "Vollkorn", serif;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-bottom: 0;
-    &:before,
-    &:after {
-      content: "";
-      background: hsla(0, 0%, 39%, 1);
-      padding: 0.25px;
-      flex: 100%;
-
+    grid-row: 2 / auto;
+    grid-column: 1 / span 3;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid #2f2f2f;
+    background: #f5f5f5;
+    @include breakpoint-up(large) {
+      border-bottom: 1.5px solid #2f2f2f;
+      background: white;
+    }
+    ul {
+      list-style: none;
+      display: none;
       @include breakpoint-up(large) {
-        padding: 0.5px;
+        display: block;
       }
     }
-    a {
-      color: #303030;
+
+    li {
+      font-family: "Vollkorn", serif;
+      display: inline;
+      padding: 1rem;
+      text-align: center;
+      align-items: stretch;
+      align-self: center;
+
+      a {
+        color: black;
+        font-size: 0.9rem;
+      }
     }
   }
-  &__menu__ul {
-    padding-left: 0;
-    @include breakpoint-down(medium) {
-      display: none;
-    }
+  &__social {
+    align-self: center;
+    justify-self: end;
     li {
-      display: block;
-      margin: 1rem 1rem;
-      text-align: center;
-    }
-
-    @include breakpoint-up(large) {
-      display: block;
-      li {
-        display: inline-block;
-        margin: 0.25rem 1rem;
-        text-align: center;
-      }
+      padding: 0.5rem;
+      display: inline-block;
     }
   }
 }
 
-ul li {
-  display: inline-block;
+.header__hamburger.open > span:first-child {
+  transform: rotate(45deg);
+}
+.header__hamburger.open > span:nth-child(2) {
+  opacity: 0;
+}
+.header__hamburger.open > span:last-child {
+  transform: rotate(-45deg);
 }
 </style>

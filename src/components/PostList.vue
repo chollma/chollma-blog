@@ -20,7 +20,7 @@ export default {
   border-left: 1px solid #eee;
   &__title {
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 700;
     font-family: Vollkorn, serif;
     color: var(--clr-dark);
     border-bottom: 2px solid black;
