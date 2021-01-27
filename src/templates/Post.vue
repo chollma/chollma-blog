@@ -18,7 +18,10 @@
               {{ $page.post.date }} &#8226; {{ $page.post.timeToRead }} min read
             </span>
           </div>
-          <div class="article__hero"></div>
+          <div class="article__hero">
+             
+           <!-- <g-image src="~/assets/img/moonwalking-hero.jpg" width="425px"/> -->
+          </div>
           <div class="article__social"></div>
         </div>
         <div class="article__body">
@@ -106,7 +109,7 @@ export default {
 
   &__head {
     font-family: "Vollkorn", serif;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 0;
   }
 
@@ -131,6 +134,8 @@ export default {
     font-family: "Vollkorn", sans-serif;
     font-weight: 400;
     font-size: 18px;
+
+   
   }
 
   &__hero {
@@ -140,7 +145,7 @@ export default {
   &__heading {
     &--primary {
       font-family: "Vollkorn", serif;
-      font-weight: 900;
+      font-weight: 700;
       margin-top: 0.85rem;
       margin-bottom: 0.85rem;
     }

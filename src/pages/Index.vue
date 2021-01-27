@@ -81,6 +81,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~/assets/scss/mixins";
+
 .home {
   display: grid;
   grid-template-columns:
@@ -93,6 +95,7 @@ export default {
 
   &__column {
     grid-column: 2;
+    
   }
 
   &__top {
