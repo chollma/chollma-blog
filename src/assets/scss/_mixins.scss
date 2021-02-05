@@ -28,11 +28,3 @@ $breakpoints-down: (
     @content;
   }
 }
-
-@mixin primary-heading {
-  color: red;
-  font-family: Vollkorn;
-  font-weight: 700;
-  margin-top: 2.4rem;
-  margin-bottom: 0.5rem;
-}
