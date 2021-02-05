@@ -24,10 +24,7 @@
             Current projects
           </h2>
           <p>
-            I support technical search engine optimization (SEO) at
-            <g-link to="https://www.rei.com"
-              >Recreational Equipment, Inc.</g-link
-            >
+            I support technical search engine optimization (SEO) at a large specialty outdoor retailer.
             When I'm not working, you'll find me writing
             <g-link to="/articles/">articles</g-link>, giving
             <g-link to="/talks/">talks</g-link>, tinkering with
