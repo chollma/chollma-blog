@@ -5,7 +5,7 @@
         <div class="article__top">
           <div class="article__subhead">
           </div>
-          <h1 class="article__heading article__heading--primary">
+          <h1 class="article__heading--primary">
             {{ $page.post.title }}
           </h1>
           <div class="article__byline">
@@ -107,11 +107,6 @@ export default {
     font-size: 14px;
   }
 
-  &__head {
-    font-family: "Vollkorn", serif;
-    font-weight: 700;
-    margin-bottom: 0;
-  }
 
   &__byline {
     color: gray;
@@ -131,11 +126,10 @@ export default {
   }
 
   &__body {
-    font-family: "Vollkorn", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 18px;
-
-   
+    font-size: 16px;
+    padding-bottom: 5rem;
   }
 
   &__hero {
@@ -144,11 +138,15 @@ export default {
 
   &__heading {
     &--primary {
-      font-family: "Vollkorn", serif;
+     font-family: Vollkorn;
       font-weight: 700;
-      margin-top: 0.85rem;
-      margin-bottom: 0.85rem;
+      margin-top: 2.4rem;
+      margin-bottom: 0.5rem;
     }
+
+     
+
+  
 
   }
 }
