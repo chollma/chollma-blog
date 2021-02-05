@@ -17,7 +17,7 @@
             <a href="https://twitter.com/CooperHollmaier">Twitter</a> or
             <a href="mailto:cooperjhollmaier@gmail.com">send me an email</a>.
           </p>
-          <h2 class="page__heading page__heading--secondary">
+          <h2>
             Past Presentations
           </h2>
           <ul>
@@ -35,7 +35,7 @@
               Meetup
             </li>
           </ul>
-          <h2 class="page__heading page__heading--secondary">Speaker Rider</h2>
+          <h2>Speaker Rider</h2>
           <p>
             I'm honored that you'd like to include me in your event. I believe
             in creating opportunities that are inclusive and accessible to all.
@@ -46,7 +46,7 @@
             the inclusion of diverse perspectives other than mine as a cisgender
             white male.
           </p>
-          <h3 class="page__heading page__heading--secondary">Hosting</h3>
+          <h3>Hosting</h3>
           <ul>
             <li class="page__list__item">
               I ask that travel to and from the event is provided.
@@ -64,7 +64,7 @@
               obligations.
             </li>
           </ul>
-          <h3 class="page__heading page__heading--secondary">Logistics</h3>
+          <h3>Logistics</h3>
           <ul>
             <li class="page__list__item">
               A publically accessible <strong>Code of Conduct</strong> is
@@ -83,7 +83,7 @@
               company.
             </li>
           </ul>
-          <h3 class="page__heading page__heading--secondary">Final Thoughts</h3>
+          <h3>Final Thoughts</h3>
           <p>
             I really appreciate you taking the time to read through these
             points. I list these out because I want to speak at events that are
