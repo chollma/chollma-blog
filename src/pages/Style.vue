@@ -64,19 +64,7 @@ export default {
     font-size: 16px;
     margin-top: .5rem;
     }
-    &--secondary {
-      color:red;
-    }
-
-    &--tertiary {
-      color:green;
-    }
-
-    &--fourth {
-      color:blue;
-    }
-
-
+   
   }
 
   &__body {
