@@ -54,7 +54,7 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.post.excerpt
+          content: this.$page.description
         },
         {
           property: "og:title",
