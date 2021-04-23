@@ -24,7 +24,7 @@ export default {
       {
         name: "description",
         content:
-          "Hire me to contribute to your next conference, webinar, or podcast!",
+          "Check out helpful snippets of code and projects I've worked on.",
       },
     ],
   },

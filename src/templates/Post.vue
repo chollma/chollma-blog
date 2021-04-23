@@ -42,6 +42,7 @@ query Post ($path: String!) {
     content
     date (format: "MMMM DD, YYYY")
     timeToRead
+    excerpt
     
   }
 }
@@ -54,7 +55,7 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.description
+          content: this.$page.post.excerpt
         },
         {
           property: "og:title",

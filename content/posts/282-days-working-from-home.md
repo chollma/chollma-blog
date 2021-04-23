@@ -1,6 +1,6 @@
 ---
 title: "282 Days: Working from Home"
-description: "Though this year has brought us all a perpetual shade of uncertain gray, I've found solace in a daily routine. I hope that laying out what I'm doing to cope with reality right now will help you too. "
+excerpt: "Though this year has brought us all a perpetual shade of uncertain gray, I've found solace in a daily routine. I hope that laying out what I'm doing to cope with reality right now will help you too. "
 date: 2020-12-09
 ---
 
